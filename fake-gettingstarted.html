@@ -272,6 +272,13 @@ Example <code>choco install fake -pre</code></p>
 </li>
 <li><p>Use it as dotnet tool: Add <code>&lt;DotNetCliToolReference Include="dotnet-fake" Version="5.0.0*" /&gt;</code> to your dependencies and run <code>dotnet fake ...</code> instead of <code>fake ...</code>, see <a href="https://github.com/matthid/fake-bootstrap/blob/master/dotnet-fake.csproj">this example</a></p></li>
 <li>
+<p>Install fake as a global dotnet tool: run <code>dotnet tool install fake-cli -g</code> to install fake globally or <code>dotnet tool install fake-cli --tool-path your_tool_path</code> to install fake into <code>your_tool_path</code>. Pass <code>--version</code> to install a specific version of fake.
+<div class="alert alert-info">
+<h5>INFO</h5>
+<p>To install a pre-release version, you have to specify the <code>--version</code> parameter. For example <code>--version=5.0.0-rc013</code></p>
+</div></p>
+</li>
+<li>
 <p>Bootstrap via shell script (fake.cmd/fake.sh),
 see this <a href="https://github.com/matthid/fake-bootstrap">example project</a>
 <div class="alert alert-warning">
@@ -284,22 +291,18 @@ see this <a href="https://github.com/matthid/fake-bootstrap">example project</a>
 <h2><a name="Create-and-Edit-scripts-with-Intellisense" class="anchor" href="#Create-and-Edit-scripts-with-Intellisense">Create and Edit scripts with Intellisense</a></h2>
 <p>Once <code>fake</code> is available you can start creating your script:</p>
 <ul>
-<li>Create a new file <code>myscript.fsx</code> with the following contents:</li>
-</ul>
-<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
-<span class="l">2: </span>
-<span class="l">3: </span>
-</pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="pp">#r</span> <span class="s">&quot;paket:</span>
-<span class="s">nuget Fake.Core.Target prerelease&quot;</span>
-<span class="pp">#load</span> <span class="s">&quot;./.fake/myscript.fsx/intellisense.fsx&quot;</span>
-</code></pre></td>
-</tr>
-</table>
+<li>
+Create a new file <code>myscript.fsx</code> with the following contents:
+<code>fsharp
+#r "paket:
+nuget Fake.Core.Target prerelease"
+#load "./.fake/myscript.fsx/intellisense.fsx"</code>
 <div class="alert alert-info">
-    <h5>INFO</h5>
-    <p><code>storage: none</code> is currently required because of a bug, but it will be added by default.</p>
+<h5>INFO</h5>
+<p><code>storage: none</code> is currently required because of a bug, but it will be added by default.</p>
 </div>
+</li>
+</ul>
 <p>Where you can add all the <a href="fake-fake5-modules.html">fake modules</a> you need.</p>
 <ul>
 <li>
@@ -881,7 +884,7 @@ Now edit the script like this:</p>
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.0.0-rc015.171</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.0.0-rc015.172</a></li>
 									</ul>
 								</div>
 							</div>
