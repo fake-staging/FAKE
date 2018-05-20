@@ -270,12 +270,12 @@
 <p>Install the 'fake' or 'fake-netcore' package for you system (currenty chocolatey)
 Example <code>choco install fake -pre</code></p>
 </li>
-<li><p>Use it as dotnet tool: Add <code>&lt;DotNetCliToolReference Include="dotnet-fake" Version="5.0.0*" /&gt;</code> to your dependencies and run <code>dotnet fake ...</code> instead of <code>fake ...</code>, see <a href="https://github.com/matthid/fake-bootstrap/blob/master/dotnet-fake.csproj">this example</a></p></li>
+<li><p>Use it as dotnet tool: Add <code>&lt;DotNetCliToolReference Include="dotnet-fake" Version="5.0.0-*" /&gt;</code> to your dependencies and run <code>dotnet fake ...</code> instead of <code>fake ...</code>, see <a href="https://github.com/matthid/fake-bootstrap/blob/master/dotnet-fake.csproj">this example</a></p></li>
 <li>
-<p>Install fake as a global dotnet tool: run <code>dotnet tool install fake-cli -g</code> to install fake globally or <code>dotnet tool install fake-cli --tool-path your_tool_path</code> to install fake into <code>your_tool_path</code>. Pass <code>--version</code> to install a specific version of fake.
+<p>Install fake as a global dotnet tool: run <code>dotnet tool install fake-cli -g --version=5.0.0-*</code> to install fake globally or <code>dotnet tool install fake-cli --tool-path your_tool_path --version=5.0.0-*</code> to install fake into <code>your_tool_path</code>. Use <code>--version</code> to specify the version of fake.
 <div class="alert alert-info">
 <h5>INFO</h5>
-<p>To install a pre-release version, you have to specify the <code>--version</code> parameter. For example <code>--version=5.0.0-rc013</code></p>
+<p>As FAKE 5 is still in pre-release, you have to specify the <code>--version</code> parameter.</p>
 </div></p>
 </li>
 <li>
@@ -884,7 +884,7 @@ Now edit the script like this:</p>
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.0.0-rc015.176</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.0.0-rc015.184</a></li>
 									</ul>
 								</div>
 							</div>
