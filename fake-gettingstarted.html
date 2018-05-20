@@ -272,7 +272,7 @@ Example <code>choco install fake -pre</code></p>
 </li>
 <li><p>Use it as dotnet tool: Add <code>&lt;DotNetCliToolReference Include="dotnet-fake" Version="5.0.0-*" /&gt;</code> to your dependencies and run <code>dotnet fake ...</code> instead of <code>fake ...</code>, see <a href="https://github.com/FakeBuild/fake-bootstrap/blob/master/dotnet-fake.csproj">this example</a></p></li>
 <li>
-<p>Install fake as a global dotnet tool: run <code>dotnet tool install fake-cli -g --version=5.0.0-*</code> to install fake globally or <code>dotnet tool install fake-cli --tool-path your_tool_path --version=5.0.0-*</code> to install fake into <code>your_tool_path</code>. Use <code>--version</code> to specify the version of fake.
+<p>Install fake as a global dotnet tool: run <code>dotnet tool install fake-cli -g --version=5.0.0-*</code> to install fake globally or <code>dotnet tool install fake-cli --tool-path your_tool_path --version=5.0.0-*</code> to install fake into <code>your_tool_path</code>. Use <code>--version</code> to specify the version of fake. See the <a href="https://github.com/FakeBuild/fake-bootstrap/tree/global_tool"><code>global_tool</code> branch of <code>fake-bootstrap</code></a> for ideas to bootstrap in your CI process.
 <div class="alert alert-info">
 <h5>INFO</h5>
 <p>As FAKE 5 is still in pre-release, you have to specify the <code>--version</code> parameter.</p>
@@ -770,9 +770,11 @@ Now edit the script like this:</p>
 <ul>
 <li>Add more modules specific to your application and discover the Fake-APIs</li>
 <li>look at the <a href="fake-dotnetcore.html">quick start guide</a> which has the same information in a more dense form.</li>
+<li>look at some of the samples in <a href="https://github.com/FakeBuild">FakeBuild</a></li>
+<li>look at <a href="https://github.com/fsharp/FAKE/blob/master/build.fsx">FAKEs own build script</a> or other examples across the F# ecosystem.</li>
 <li>Add fake build scripts to your projects and let us know.</li>
 <li>Automate stuff with FAKE and use standalone scripts.</li>
-<li>Write your own modules and let us know.</li>
+<li>Write your own modules and let us know - we love to add them to the nagivation or announce them on <a href="https://twitter.com/fsharpMake">twitter</a>.</li>
 <li>Contribute :)</li>
 </ul>
 
@@ -884,7 +886,7 @@ Now edit the script like this:</p>
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.0.0-rc015.194</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.0.0-rc015.195</a></li>
 									</ul>
 								</div>
 							</div>
