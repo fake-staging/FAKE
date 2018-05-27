@@ -267,6 +267,25 @@
 </div>
 
 <!-- Render nested types and modules, if there are any -->
+  <h2>Nested types and modules</h2>
+  <div>
+      <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="fake-dotnet-assemblyinfofile-attribute.html">Attribute</a>
+          </td>
+          <td class="xmldoc">
+            
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
 
   <a name="Functions and values" class="anchor" href="#Functions and values"><h3>Functions and values</h3></a>
   <table class="table table-bordered member-list">
@@ -278,14 +297,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1575', 1575)" onmouseover="showTip(event, '1575', 1575)">
-            create outputFileName attributes config
+            create(outputFileName attributes config)
           </code>
           <div class="tip" id="1575">
             <strong>Signature:</strong> outputFileName:string -&gt; attributes:seq&lt;Attribute&gt; -&gt; config:AssemblyInfoFileConfig option -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L377-377" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L380-380" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -299,7 +318,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1576', 1576)" onmouseover="showTip(event, '1576', 1576)">
-            createCppCli outputFileName attributes
+            createCppCli(outputFileName attributes)
           </code>
           <div class="tip" id="1576">
             <strong>Signature:</strong> outputFileName:string -&gt; attributes:seq&lt;Attribute&gt; -&gt; unit<br />
@@ -314,7 +333,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
                 <h5>OBSOLETE</h5>
                 <p>Please use &#39;create&#39; instead</p>
             </div> 
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L360-360" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L363-363" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -327,7 +346,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1577', 1577)" onmouseover="showTip(event, '1577', 1577)">
-            createCppCliWithConfig (...)
+            createCppCliWithConfig(...)
           </code>
           <div class="tip" id="1577">
             <strong>Signature:</strong> outputFileName:string -&gt; attributes:seq&lt;Attribute&gt; -&gt; config:AssemblyInfoFileConfig -&gt; unit<br />
@@ -342,7 +361,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
                 <h5>OBSOLETE</h5>
                 <p>Please use &#39;create&#39; instead</p>
             </div> 
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L322-322" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L325-325" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -356,7 +375,7 @@ Does not generate an AssemblyVersionInformation class.</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1578', 1578)" onmouseover="showTip(event, '1578', 1578)">
-            createCSharp outputFileName attributes
+            createCSharp(outputFileName attributes)
           </code>
           <div class="tip" id="1578">
             <strong>Signature:</strong> outputFileName:string -&gt; attributes:seq&lt;Attribute&gt; -&gt; unit<br />
@@ -371,7 +390,7 @@ Does not generate an AssemblyVersionInformation class.</p>
                 <h5>OBSOLETE</h5>
                 <p>Please use &#39;create&#39; instead</p>
             </div> 
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L343-343" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L346-346" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -385,7 +404,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1579', 1579)" onmouseover="showTip(event, '1579', 1579)">
-            createCSharpWithConfig (...)
+            createCSharpWithConfig(...)
           </code>
           <div class="tip" id="1579">
             <strong>Signature:</strong> outputFileName:string -&gt; attributes:seq&lt;Attribute&gt; -&gt; config:AssemblyInfoFileConfig -&gt; unit<br />
@@ -400,7 +419,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
                 <h5>OBSOLETE</h5>
                 <p>Please use &#39;create&#39; instead</p>
             </div> 
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L214-214" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L217-217" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -414,7 +433,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1580', 1580)" onmouseover="showTip(event, '1580', 1580)">
-            createFSharp outputFileName attributes
+            createFSharp(outputFileName attributes)
           </code>
           <div class="tip" id="1580">
             <strong>Signature:</strong> outputFileName:string -&gt; attributes:seq&lt;Attribute&gt; -&gt; unit<br />
@@ -429,7 +448,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
                 <h5>OBSOLETE</h5>
                 <p>Please use &#39;create&#39; instead</p>
             </div> 
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L349-349" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L352-352" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -443,7 +462,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1581', 1581)" onmouseover="showTip(event, '1581', 1581)">
-            createFSharpWithConfig (...)
+            createFSharpWithConfig(...)
           </code>
           <div class="tip" id="1581">
             <strong>Signature:</strong> outputFileName:string -&gt; attributes:seq&lt;Attribute&gt; -&gt; config:AssemblyInfoFileConfig -&gt; unit<br />
@@ -458,7 +477,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
                 <h5>OBSOLETE</h5>
                 <p>Please use &#39;create&#39; instead</p>
             </div> 
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L261-261" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L264-264" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -472,7 +491,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1582', 1582)" onmouseover="showTip(event, '1582', 1582)">
-            createVisualBasic (...)
+            createVisualBasic(...)
           </code>
           <div class="tip" id="1582">
             <strong>Signature:</strong> outputFileName:string -&gt; attributes:seq&lt;Attribute&gt; -&gt; unit<br />
@@ -487,7 +506,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
                 <h5>OBSOLETE</h5>
                 <p>Please use &#39;create&#39; instead</p>
             </div> 
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L355-355" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L358-358" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -501,7 +520,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1583', 1583)" onmouseover="showTip(event, '1583', 1583)">
-            createVisualBasicWithConfig (...)
+            createVisualBasicWithConfig(...)
           </code>
           <div class="tip" id="1583">
             <strong>Signature:</strong> outputFileName:string -&gt; attributes:seq&lt;Attribute&gt; -&gt; config:AssemblyInfoFileConfig -&gt; unit<br />
@@ -516,7 +535,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
                 <h5>OBSOLETE</h5>
                 <p>Please use &#39;create&#39; instead</p>
             </div> 
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L293-293" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L296-296" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -530,14 +549,14 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1584', 1584)" onmouseover="showTip(event, '1584', 1584)">
-            getAttribute attrName assemblyInfoFile
+            getAttribute(attrName assemblyInfoFile)
           </code>
           <div class="tip" id="1584">
             <strong>Signature:</strong> attrName:string -&gt; assemblyInfoFile:string -&gt; Attribute option<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L437-437" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L440-440" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -555,14 +574,14 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1585', 1585)" onmouseover="showTip(event, '1585', 1585)">
-            getAttributes assemblyInfoFile
+            getAttributes(assemblyInfoFile)
           </code>
           <div class="tip" id="1585">
             <strong>Signature:</strong> assemblyInfoFile:string -&gt; seq&lt;Attribute&gt;<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L392-392" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L395-395" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -579,14 +598,14 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1586', 1586)" onmouseover="showTip(event, '1586', 1586)">
-            getAttributeValue (...)
+            getAttributeValue(...)
           </code>
           <div class="tip" id="1586">
             <strong>Signature:</strong> attrName:string -&gt; assemblyInfoFile:string -&gt; string option<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L444-444" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L447-447" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -604,14 +623,14 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1587', 1587)" onmouseover="showTip(event, '1587', 1587)">
-            updateAttributes (...)
+            updateAttributes(...)
           </code>
           <div class="tip" id="1587">
             <strong>Signature:</strong> assemblyInfoFile:string -&gt; attributes:seq&lt;Attribute&gt; -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L472-472" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.AssemblyInfoFile/AssemblyInfoFile.fs#L475-475" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -732,7 +751,7 @@ The generated AssemblyInfo file contains an AssemblyVersionInformation class whi
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.0.0-rc017.233</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.0.0-rc017.237</a></li>
 									</ul>
 								</div>
 							</div>
