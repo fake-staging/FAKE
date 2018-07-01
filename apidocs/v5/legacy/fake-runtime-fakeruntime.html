@@ -295,6 +295,14 @@
         </tr>
         <tr>
           <td class="type-name">
+            <a href="fake-runtime-fakeruntime-hint.html">Hint</a>
+          </td>
+          <td class="xmldoc">
+            
+          </td>
+        </tr>
+        <tr>
+          <td class="type-name">
             <a href="fake-runtime-fakeruntime-inlinepaketdependenciessection.html">InlinePaketDependenciesSection</a>
           </td>
           <td class="xmldoc">
@@ -315,33 +323,15 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '2070', 2070)" onmouseover="showTip(event, '2070', 2070)">
+          <code onmouseout="hideTip(event, '2071', 2071)" onmouseover="showTip(event, '2071', 2071)">
             createConfig (...)
           </code>
-          <div class="tip" id="2070">
+          <div class="tip" id="2071">
             <strong>Signature:</strong> logLevel:VerboseLevel -&gt; fsiOptions:string list -&gt; scriptPath:string -&gt; scriptArgs:string list -&gt; onErrMsg:(string -&gt; unit) -&gt; onOutMsg:(string -&gt; unit) -&gt; useCache:bool -&gt; restoreOnlyGroup:bool -&gt; FakeConfig<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L579-579" class="github-link">
-              <img src="/assets/img/github.png" class="normal" />
-              <img src="/assets/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '2071', 2071)" onmouseover="showTip(event, '2071', 2071)">
-            createConfigSimple (...)
-          </code>
-          <div class="tip" id="2071">
-            <strong>Signature:</strong> logLevel:VerboseLevel -&gt; fsiOptions:string list -&gt; scriptPath:string -&gt; scriptArgs:string list -&gt; useCache:bool -&gt; restoreOnlyGroup:bool -&gt; FakeConfig<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L605-605" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L580-580" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -352,14 +342,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '2072', 2072)" onmouseover="showTip(event, '2072', 2072)">
-            paketCachingProvider (...)
+            createConfigSimple (...)
           </code>
           <div class="tip" id="2072">
-            <strong>Signature:</strong> config:FakeConfig -&gt; cacheDir:string -&gt; paketApi:Dependencies -&gt; paketDependenciesFile:Lazy&lt;DependenciesFile&gt; -&gt; group:string option -&gt; ICachingProvider<br />
+            <strong>Signature:</strong> logLevel:VerboseLevel -&gt; fsiOptions:string list -&gt; scriptPath:string -&gt; scriptArgs:string list -&gt; useCache:bool -&gt; restoreOnlyGroup:bool -&gt; FakeConfig<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L139-139" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L606-606" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -370,14 +360,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '2073', 2073)" onmouseover="showTip(event, '2073', 2073)">
-            prepareAndRunScript config
+            paketCachingProvider (...)
           </code>
           <div class="tip" id="2073">
-            <strong>Signature:</strong> config:FakeConfig -&gt; RunResult<br />
+            <strong>Signature:</strong> config:FakeConfig -&gt; cacheDir:string -&gt; paketApi:Dependencies -&gt; paketDependenciesFile:Lazy&lt;DependenciesFile&gt; -&gt; group:string option -&gt; ICachingProvider<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L608-608" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L152-152" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -388,14 +378,22 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '2074', 2074)" onmouseover="showTip(event, '2074', 2074)">
-            prepareFakeScript config
+            prepareAndRunScript config
           </code>
           <div class="tip" id="2074">
-            <strong>Signature:</strong> config:FakeConfig -&gt; ICachingProvider<br />
-                                  </div>
+            <strong>Signature:</strong> config:FakeConfig -&gt; RunResult<br />
+                                        <span>
+                    <strong>Attributes:</strong><br />
+[&lt;Obsolete(&quot;Use prepareAndRunScriptExt instead&quot;)&gt;]<br />
+                </span>
+          </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L507-507" class="github-link">
+            <div class="alert alert-warning">
+                <h5>OBSOLETE</h5>
+                <p>Use prepareAndRunScriptExt instead</p>
+            </div> 
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L614-614" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -406,14 +404,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '2075', 2075)" onmouseover="showTip(event, '2075', 2075)">
-            readAllLines r
+            prepareAndRunScriptExt config
           </code>
           <div class="tip" id="2075">
-            <strong>Signature:</strong> r:TextReader -&gt; seq&lt;string&gt;<br />
+            <strong>Signature:</strong> config:FakeConfig -&gt; RunResult * ResultCoreCacheInfo * FakeContext<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L13-13" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L609-609" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -424,14 +422,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '2076', 2076)" onmouseover="showTip(event, '2076', 2076)">
-            restoreDependencies (...)
+            prepareFakeScript config
           </code>
           <div class="tip" id="2076">
-            <strong>Signature:</strong> config:FakeConfig -&gt; cacheDir:string -&gt; section:FakeSection -&gt; ICachingProvider<br />
+            <strong>Signature:</strong> config:FakeConfig -&gt; ICachingProvider<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L472-472" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L508-508" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -442,14 +440,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '2077', 2077)" onmouseover="showTip(event, '2077', 2077)">
-            retrieveHints config runResult
+            readAllLines r
           </code>
           <div class="tip" id="2077">
-            <strong>Signature:</strong> config:FakeConfig -&gt; runResult:RunResult -&gt; string list<br />
+            <strong>Signature:</strong> r:TextReader -&gt; seq&lt;string&gt;<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L612-612" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L14-14" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -460,14 +458,14 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '2078', 2078)" onmouseover="showTip(event, '2078', 2078)">
-            tryFindGroupFromDepsFile scriptDir
+            restoreDependencies (...)
           </code>
           <div class="tip" id="2078">
-            <strong>Signature:</strong> scriptDir:string -&gt; FakeSection option<br />
+            <strong>Signature:</strong> config:FakeConfig -&gt; cacheDir:string -&gt; section:FakeSection -&gt; ICachingProvider<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L477-477" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L473-473" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -478,14 +476,22 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '2079', 2079)" onmouseover="showTip(event, '2079', 2079)">
-            tryReadPaketDependenciesFromScript (...)
+            retrieveHints config runResult
           </code>
           <div class="tip" id="2079">
-            <strong>Signature:</strong> tokenized:TokenizedScript -&gt; cacheDir:string -&gt; scriptPath:string -&gt; FakeSection option<br />
-                                  </div>
+            <strong>Signature:</strong> config:FakeConfig -&gt; runResult:RunResult -&gt; string list<br />
+                                        <span>
+                    <strong>Attributes:</strong><br />
+[&lt;Obsolete(&quot;Use retrieveHintsExt instead.&quot;)&gt;]<br />
+                </span>
+          </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L73-73" class="github-link">
+            <div class="alert alert-warning">
+                <h5>OBSOLETE</h5>
+                <p>Use retrieveHintsExt instead.</p>
+            </div> 
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L667-667" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -496,14 +502,68 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '2080', 2080)" onmouseover="showTip(event, '2080', 2080)">
-            writeFixedPaketDependencies (...)
+            retrieveHintsExt context runResult cache
           </code>
           <div class="tip" id="2080">
+            <strong>Signature:</strong> context:FakeContext -&gt; runResult:RunResult -&gt; cache:ResultCoreCacheInfo -&gt; Hint list<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L622-622" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '2081', 2081)" onmouseover="showTip(event, '2081', 2081)">
+            tryFindGroupFromDepsFile scriptDir
+          </code>
+          <div class="tip" id="2081">
+            <strong>Signature:</strong> scriptDir:string -&gt; FakeSection option<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L478-478" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '2082', 2082)" onmouseover="showTip(event, '2082', 2082)">
+            tryReadPaketDependenciesFromScript (...)
+          </code>
+          <div class="tip" id="2082">
+            <strong>Signature:</strong> tokenized:TokenizedScript -&gt; cacheDir:string -&gt; scriptPath:string -&gt; FakeSection option<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L74-74" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '2083', 2083)" onmouseover="showTip(event, '2083', 2083)">
+            writeFixedPaketDependencies (...)
+          </code>
+          <div class="tip" id="2083">
             <strong>Signature:</strong> scriptCacheDir:string -&gt; f:InlinePaketDependenciesSection -&gt; FakeSection<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L26-26" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Runtime/FakeRuntime.fs#L27-27" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -617,7 +677,7 @@
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.1.1-alpha.287</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.1.1-alpha.291</a></li>
 									</ul>
 								</div>
 							</div>
