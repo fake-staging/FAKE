@@ -2089,7 +2089,7 @@ This module is part of the <code>Fake.IO.FileSystem</code> package</p>
 <div class="tip" id="fs7">val printf : format:Printf.TextWriterFormat&lt;&#39;T&gt; -&gt; &#39;T</div>
 <div class="tip" id="fs8">val projectFiles : Fake.IO.IGlobbingPattern</div>
 <div class="tip" id="fs9">namespace Fake.Core</div>
-<div class="tip" id="fs10">Multiple items<br />module Target<br /><br />from Fake.Core<br /><br />--------------------<br />type Target =<br />&#160;&#160;{Name: string;<br />&#160;&#160;&#160;Dependencies: string list;<br />&#160;&#160;&#160;SoftDependencies: string list;<br />&#160;&#160;&#160;Description: TargetDescription option;<br />&#160;&#160;&#160;Function: TargetParameter -&gt; unit;}</div>
+<div class="tip" id="fs10">Multiple items<br />module Target<br /><br />from Fake.Core<br /><br />--------------------<br />type Target =<br />&#160;&#160;{Name: string;<br />&#160;&#160;&#160;Dependencies: string list;<br />&#160;&#160;&#160;SoftDependencies: string list;<br />&#160;&#160;&#160;Description: TargetDescription option;<br />&#160;&#160;&#160;Function: TargetParameter -&gt; unit;}<br />&#160;&#160;&#160;&#160;member DescriptionAsString : TargetDescription</div>
 <div class="tip" id="fs11">val create : name:string -&gt; body:(TargetParameter -&gt; unit) -&gt; unit</div>
 <div class="tip" id="fs12">module File<br /><br />from Fake.IO</div>
 <div class="tip" id="fs13">val deleteAll : files:seq&lt;string&gt; -&gt; unit</div>
@@ -2730,7 +2730,7 @@ All operations assume that the CommandHelper can find git.exe.</p>
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.0-alpha.304</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.0-alpha.305</a></li>
 									</ul>
 								</div>
 							</div>
