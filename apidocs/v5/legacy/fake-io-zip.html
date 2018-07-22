@@ -149,7 +149,8 @@
 														<li>
 															<a href="/apidocs/index.html#Fake.Installer">Installer</a>
 															<ul>
-																<li><a href="/apidocs/fake-installer-innosetup.html">InnoSetup</a></li>
+																<li><a href="/apidocs/v5/fake-installer-innosetup.html">InnoSetup</a></li>
+																<li><a href="/apidocs/v5/fake-installer-wix.html">Wix</a></li>
 															</ul>
 														</li>
 														<li>
@@ -291,7 +292,7 @@
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L73-73" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L74-74" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -300,7 +301,7 @@
 <ul>
 <li><code>workingDir</code> - The relative dir of the zip files. Use this parameter to influence directory structure within zip file.</li>
 <li><code>fileName</code> - The fileName of the resulting zip file.</li>
-<li><code>comment</code> - A comment for the resulting zip file.</li>
+<li><code>comment</code> - A comment for the resulting zip file (currently ignored in fake 5).</li>
 <li><code>level</code> - The compression level.</li>
 <li><code>flatten</code> - If set to true then all subfolders are merged into the root folder.</li>
 <li><code>files</code> - A sequence with files to zip.</li>
@@ -320,7 +321,7 @@
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L328-328" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L327-327" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -328,7 +329,7 @@
 <h2>Parameters</h2>
 <ul>
 <li><code>fileName</code> - The file name of the resulting zip file.</li>
-<li><code>comment</code> - A comment for the resulting zip file.</li>
+<li><code>comment</code> - A comment for the resulting zip file (currently ignored in fake 5).</li>
 <li><code>level</code> - The compression level.</li>
 <li><code>files</code> - A sequence of target folders and files to include relative to their base directory.</li>
 </ul>
@@ -347,7 +348,7 @@
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L106-106" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L107-107" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -355,7 +356,7 @@
 <h2>Parameters</h2>
 <ul>
 <li><code>fileName</code> - The fileName of the resulting zip file.</li>
-<li><code>comment</code> - A comment for the resulting zip file.</li>
+<li><code>comment</code> - A comment for the resulting zip file (currently ignored in fake 5).</li>
 <li><code>level</code> - The compression level.</li>
 <li><code>items</code> - A sequence with files and their target location in the zip.</li>
 </ul>
@@ -394,7 +395,7 @@
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L255-255" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L254-254" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -457,7 +458,7 @@ This method will convert a given glob pattern with the given workingDir to a seq
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L282-282" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L281-281" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -519,7 +520,7 @@ This method will convert a given glob pattern with the given workingDir to a seq
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L310-310" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L309-309" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -582,7 +583,7 @@ This function will move a given list of zip specifications to the given folder (
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L129-129" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L128-128" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -607,7 +608,7 @@ This function will move a given list of zip specifications to the given folder (
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L190-190" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L189-189" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -632,7 +633,7 @@ This function will move a given list of zip specifications to the given folder (
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L168-168" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L167-167" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -657,7 +658,7 @@ This function will move a given list of zip specifications to the given folder (
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L98-98" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L99-99" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -683,7 +684,7 @@ This function will move a given list of zip specifications to the given folder (
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L120-120" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L119-119" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -708,7 +709,7 @@ This function will move a given list of zip specifications to the given folder (
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L376-376" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L375-375" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -770,7 +771,7 @@ This function will move a given list of zip specifications to the given folder (
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L114-114" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.IO.Zip/Zip.fs#L113-113" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -778,8 +779,6 @@ This function will move a given list of zip specifications to the given folder (
 <h2>Parameters</h2>
 <ul>
 <li><code>fileName</code> - The fileName of the resulting zip file.</li>
-<li><code>comment</code> - A comment for the resulting zip file.</li>
-<li><code>level</code> - The compression level.</li>
 <li><code>items</code> - A sequence with files and their target location in the zip.</li>
 </ul>
 
@@ -893,7 +892,7 @@ This function will move a given list of zip specifications to the given folder (
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.313</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.314</a></li>
 									</ul>
 								</div>
 							</div>
