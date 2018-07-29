@@ -596,7 +596,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '492', 492)" onmouseover="showTip(event, '492', 492)">
-            getParser ast
+            getParser(ast)
           </code>
           <div class="tip" id="492">
             <strong>Signature:</strong> ast:UsageAst -&gt; ArgumentParser&lt;DocoptMap,Map&lt;string,DocoptResult&gt;&gt;<br />
@@ -614,7 +614,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '493', 493)" onmouseover="showTip(event, '493', 493)">
-            many p
+            many(p)
           </code>
           <div class="tip" id="493">
             <strong>Signature:</strong> p:ArgumentParser&lt;&#39;?10868,&#39;?10869&gt; -&gt; ArgumentParser&lt;&#39;?10868,&#39;?10869 list&gt;<br />
@@ -632,7 +632,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '494', 494)" onmouseover="showTip(event, '494', 494)">
-            many1 p
+            many1(p)
           </code>
           <div class="tip" id="494">
             <strong>Signature:</strong> p:ArgumentParser&lt;&#39;?10871,&#39;?10872&gt; -&gt; ArgumentParser&lt;&#39;?10871,&#39;?10872 list&gt;<br />
@@ -668,7 +668,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '496', 496)" onmouseover="showTip(event, '496', 496)">
-            mergeMaps maps
+            mergeMaps(maps)
           </code>
           <div class="tip" id="496">
             <strong>Signature:</strong> maps:seq&lt;Map&lt;&#39;?10946,&#39;?10947&gt;&gt; -&gt; Map&lt;&#39;?10946,&#39;?10947&gt;<br />
@@ -686,7 +686,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '497', 497)" onmouseover="showTip(event, '497', 497)">
-            multipleSaveInMap f
+            multipleSaveInMap(f)
           </code>
           <div class="tip" id="497">
             <strong>Signature:</strong> f:(&#39;?10940 -&gt; &#39;?10941) -&gt; &#39;?10940 -&gt; IArgumentStream&lt;DocoptMap&gt; -&gt; Reply&lt;DocoptMap&gt;<br />
@@ -704,7 +704,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '498', 498)" onmouseover="showTip(event, '498', 498)">
-            parg argName
+            parg(argName)
           </code>
           <div class="tip" id="498">
             <strong>Signature:</strong> argName:string -&gt; IArgumentStream&lt;&#39;?10928&gt; -&gt; Reply&lt;string&gt;<br />
@@ -722,7 +722,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '499', 499)" onmouseover="showTip(event, '499', 499)">
-            pcmd cmd
+            pcmd(cmd)
           </code>
           <div class="tip" id="499">
             <strong>Signature:</strong> cmd:string -&gt; IArgumentStream&lt;&#39;?10926&gt; -&gt; Reply&lt;string&gt;<br />
@@ -740,7 +740,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '500', 500)" onmouseover="showTip(event, '500', 500)">
-            pLongFlag flag
+            pLongFlag(flag)
           </code>
           <div class="tip" id="500">
             <strong>Signature:</strong> flag:SafeOption -&gt; IArgumentStream&lt;DocoptMap&gt; -&gt; Reply&lt;DocoptMap&gt;<br />
@@ -812,7 +812,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '504', 504)" onmouseover="showTip(event, '504', 504)">
-            pseq ps
+            pseq(ps)
           </code>
           <div class="tip" id="504">
             <strong>Signature:</strong> ps:seq&lt;ArgumentParser&lt;&#39;?10874,Map&lt;&#39;?10875,&#39;?10876&gt;&gt;&gt; -&gt; ArgumentParser&lt;&#39;?10874,Map&lt;&#39;?10875,&#39;?10876&gt;&gt;<br />
@@ -830,7 +830,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '505', 505)" onmouseover="showTip(event, '505', 505)">
-            pShortFlag flag
+            pShortFlag(flag)
           </code>
           <div class="tip" id="505">
             <strong>Signature:</strong> flag:SafeOption -&gt; IArgumentStream&lt;DocoptMap&gt; -&gt; Reply&lt;DocoptMap&gt;<br />
@@ -866,7 +866,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '507', 507)" onmouseover="showTip(event, '507', 507)">
-            punorderedseqWithMany (...)
+            punorderedseqWithMany(...)
           </code>
           <div class="tip" id="507">
             <strong>Signature:</strong> allowEmpty:bool -&gt; allowMissing:bool -&gt; ps:seq&lt;bool * ArgumentParser&lt;&#39;u,&#39;a&gt;&gt; -&gt; stream:IArgumentStream&lt;&#39;u&gt; -&gt; Reply&lt;&#39;a list&gt;<br />
@@ -884,7 +884,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '508', 508)" onmouseover="showTip(event, '508', 508)">
-            pzero stream
+            pzero(stream)
           </code>
           <div class="tip" id="508">
             <strong>Signature:</strong> stream:IArgumentStream&lt;&#39;?10820&gt; -&gt; Reply&lt;&#39;?10821&gt;<br />
@@ -1077,7 +1077,7 @@
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.322</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.323</a></li>
 									</ul>
 								</div>
 							</div>

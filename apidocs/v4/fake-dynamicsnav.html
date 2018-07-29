@@ -349,7 +349,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '216', 216)" onmouseover="showTip(event, '216', 216)">
-            analyzeTestResults fileName
+            analyzeTestResults(fileName)
           </code>
           <div class="tip" id="216">
             <strong>Signature:</strong> fileName:string -&gt; TestResults option<br />
@@ -381,7 +381,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '218', 218)" onmouseover="showTip(event, '218', 218)">
-            CloseAllNavProcesses (...)
+            CloseAllNavProcesses(...)
           </code>
           <div class="tip" id="218">
             <strong>Signature:</strong> raiseExceptionIfNotFound:bool -&gt; unit<br />
@@ -397,7 +397,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '219', 219)" onmouseover="showTip(event, '219', 219)">
-            CompileAll connectionInfo
+            CompileAll(connectionInfo)
           </code>
           <div class="tip" id="219">
             <strong>Signature:</strong> connectionInfo:DynamicsNavParams -&gt; unit<br />
@@ -429,7 +429,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '221', 221)" onmouseover="showTip(event, '221', 221)">
-            createConnectionInfo (...)
+            createConnectionInfo(...)
           </code>
           <div class="tip" id="221">
             <strong>Signature:</strong> navClientVersion:string -&gt; serverMode:NavisionServerType -&gt; serverName:string -&gt; targetDatabase:string -&gt; DynamicsNavParams<br />
@@ -461,7 +461,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '223', 223)" onmouseover="showTip(event, '223', 223)">
-            createRTCConnectionInfo (...)
+            createRTCConnectionInfo(...)
           </code>
           <div class="tip" id="223">
             <strong>Signature:</strong> navClientVersion:string -&gt; serverName:string -&gt; serviceTierName:string -&gt; port:int -&gt; company:string -&gt; RTCParams<br />
@@ -477,7 +477,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '224', 224)" onmouseover="showTip(event, '224', 224)">
-            ensureAllNAVProcessesHaveStopped timeout
+            ensureAllNAVProcessesHaveStopped(...)
           </code>
           <div class="tip" id="224">
             <strong>Signature:</strong> timeout:TimeSpan -&gt; unit<br />
@@ -514,7 +514,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '226', 226)" onmouseover="showTip(event, '226', 226)">
-            ExportObjects (...)
+            ExportObjects(...)
           </code>
           <div class="tip" id="226">
             <strong>Signature:</strong> connectionInfo:DynamicsNavParams -&gt; filter:string -&gt; fileName:string -&gt; unit<br />
@@ -530,7 +530,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '227', 227)" onmouseover="showTip(event, '227', 227)">
-            getNAVClassicPath navClientVersion
+            getNAVClassicPath(navClientVersion)
           </code>
           <div class="tip" id="227">
             <strong>Signature:</strong> navClientVersion:string -&gt; string<br />
@@ -546,7 +546,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '228', 228)" onmouseover="showTip(event, '228', 228)">
-            getNAVPath navClientVersion
+            getNAVPath(navClientVersion)
           </code>
           <div class="tip" id="228">
             <strong>Signature:</strong> navClientVersion:string -&gt; string<br />
@@ -562,7 +562,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '229', 229)" onmouseover="showTip(event, '229', 229)">
-            getNAVProcesses ()
+            getNAVProcesses()
           </code>
           <div class="tip" id="229">
             <strong>Signature:</strong> unit -&gt; seq&lt;Process&gt;<br />
@@ -578,7 +578,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '230', 230)" onmouseover="showTip(event, '230', 230)">
-            getNAVServicePath navClientVersion
+            getNAVServicePath(navClientVersion)
           </code>
           <div class="tip" id="230">
             <strong>Signature:</strong> navClientVersion:string -&gt; string<br />
@@ -608,7 +608,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '232', 232)" onmouseover="showTip(event, '232', 232)">
-            ImportFiles (...)
+            ImportFiles(...)
           </code>
           <div class="tip" id="232">
             <strong>Signature:</strong> connectionInfo:DynamicsNavParams -&gt; importFileName:string -&gt; files:seq&lt;string&gt; -&gt; unit<br />
@@ -657,7 +657,7 @@ If the import fails, then every file will be tried alone.</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '235', 235)" onmouseover="showTip(event, '235', 235)">
-            RunCodeunitWithSettings (...)
+            RunCodeunitWithSettings(...)
           </code>
           <div class="tip" id="235">
             <strong>Signature:</strong> connectionInfo:RTCParams -&gt; settingsFile:string -&gt; codeunitID:int -&gt; unit<br />
@@ -673,7 +673,7 @@ If the import fails, then every file will be tried alone.</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '236', 236)" onmouseover="showTip(event, '236', 236)">
-            StartNavServiceTier (...)
+            StartNavServiceTier(...)
           </code>
           <div class="tip" id="236">
             <strong>Signature:</strong> serverMode:NavisionServerType -&gt; navClientVersion:string -&gt; unit<br />
@@ -687,7 +687,7 @@ If the import fails, then every file will be tried alone.</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '237', 237)" onmouseover="showTip(event, '237', 237)">
-            StopNavServiceTier (...)
+            StopNavServiceTier(...)
           </code>
           <div class="tip" id="237">
             <strong>Signature:</strong> serverMode:NavisionServerType -&gt; navClientVersion:&#39;?10922 -&gt; unit<br />
@@ -804,7 +804,7 @@ If the import fails, then every file will be tried alone.</p>
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.322</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.323</a></li>
 									</ul>
 								</div>
 							</div>

@@ -286,7 +286,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1495', 1495)" onmouseover="showTip(event, '1495', 1495)">
-            createDoc text
+            createDoc(text)
           </code>
           <div class="tip" id="1495">
             <strong>Signature:</strong> text:string -&gt; XmlDocument<br />
@@ -306,7 +306,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1496', 1496)" onmouseover="showTip(event, '1496', 1496)">
-            endElement writer
+            endElement(writer)
           </code>
           <div class="tip" id="1496">
             <strong>Signature:</strong> writer:XmlWriter -&gt; XmlWriter<br />
@@ -346,7 +346,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1498', 1498)" onmouseover="showTip(event, '1498', 1498)">
-            getChilds node
+            getChilds(node)
           </code>
           <div class="tip" id="1498">
             <strong>Signature:</strong> node:&#39;a -&gt; seq&lt;XmlNode&gt;<br />
@@ -366,7 +366,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1499', 1499)" onmouseover="showTip(event, '1499', 1499)">
-            getDocElement doc
+            getDocElement(doc)
           </code>
           <div class="tip" id="1499">
             <strong>Signature:</strong> doc:XmlDocument -&gt; XmlElement<br />
@@ -406,7 +406,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1501', 1501)" onmouseover="showTip(event, '1501', 1501)">
-            getWriter fileName
+            getWriter(fileName)
           </code>
           <div class="tip" id="1501">
             <strong>Signature:</strong> fileName:string -&gt; XmlWriter<br />
@@ -426,7 +426,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1502', 1502)" onmouseover="showTip(event, '1502', 1502)">
-            loadDoc path
+            loadDoc(path)
           </code>
           <div class="tip" id="1502">
             <strong>Signature:</strong> path:string -&gt; XmlDocument<br />
@@ -506,7 +506,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1506', 1506)" onmouseover="showTip(event, '1506', 1506)">
-            pokeInnerText (...)
+            pokeInnerText(...)
           </code>
           <div class="tip" id="1506">
             <strong>Signature:</strong> fileName:string -&gt; xpath:string -&gt; innerTextValue:string -&gt; unit<br />
@@ -526,7 +526,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1507', 1507)" onmouseover="showTip(event, '1507', 1507)">
-            pokeInnerTextNS (...)
+            pokeInnerTextNS(...)
           </code>
           <div class="tip" id="1507">
             <strong>Signature:</strong> fileName:string -&gt; namespaces:seq&lt;string * string&gt; -&gt; xpath:string -&gt; innerTextValue:string -&gt; unit<br />
@@ -566,7 +566,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1509', 1509)" onmouseover="showTip(event, '1509', 1509)">
-            read (...)
+            read(...)
           </code>
           <div class="tip" id="1509">
             <strong>Signature:</strong> failOnError:bool -&gt; xmlFileName:string -&gt; nameSpace:string -&gt; prefix:string -&gt; xPath:string -&gt; seq&lt;string&gt;<br />
@@ -586,7 +586,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1510', 1510)" onmouseover="showTip(event, '1510', 1510)">
-            read_Int (...)
+            read_Int(...)
           </code>
           <div class="tip" id="1510">
             <strong>Signature:</strong> failOnError:bool -&gt; xmlFileName:string -&gt; nameSpace:string -&gt; prefix:string -&gt; xPath:string -&gt; bool * int<br />
@@ -627,7 +627,7 @@ Returns if the value is an int and the value</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1512', 1512)" onmouseover="showTip(event, '1512', 1512)">
-            replaceXPathAttribute (...)
+            replaceXPathAttribute(...)
           </code>
           <div class="tip" id="1512">
             <strong>Signature:</strong> xpath:string -&gt; attribute:string -&gt; value:string -&gt; doc:XmlDocument -&gt; XmlDocument<br />
@@ -647,7 +647,7 @@ Returns if the value is an int and the value</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1513', 1513)" onmouseover="showTip(event, '1513', 1513)">
-            replaceXPathInnerText (...)
+            replaceXPathInnerText(...)
           </code>
           <div class="tip" id="1513">
             <strong>Signature:</strong> xpath:string -&gt; innerTextValue:string -&gt; doc:XmlDocument -&gt; XmlDocument<br />
@@ -667,7 +667,7 @@ Returns if the value is an int and the value</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1514', 1514)" onmouseover="showTip(event, '1514', 1514)">
-            replaceXPathInnerTextNS (...)
+            replaceXPathInnerTextNS(...)
           </code>
           <div class="tip" id="1514">
             <strong>Signature:</strong> xpath:string -&gt; innerTextValue:string -&gt; namespaces:&#39;?17655 -&gt; doc:XmlDocument -&gt; XmlDocument<br />
@@ -687,7 +687,7 @@ Returns if the value is an int and the value</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1515', 1515)" onmouseover="showTip(event, '1515', 1515)">
-            replaceXPathNS (...)
+            replaceXPathNS(...)
           </code>
           <div class="tip" id="1515">
             <strong>Signature:</strong> xpath:string -&gt; value:string -&gt; namespaces:&#39;a -&gt; doc:XmlDocument -&gt; XmlDocument<br />
@@ -725,7 +725,7 @@ Returns if the value is an int and the value</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1517', 1517)" onmouseover="showTip(event, '1517', 1517)">
-            selectXPathAttributeValue (...)
+            selectXPathAttributeValue(...)
           </code>
           <div class="tip" id="1517">
             <strong>Signature:</strong> xpath:string -&gt; attribute:string -&gt; namespaces:&#39;?17644 -&gt; doc:XmlDocument -&gt; string<br />
@@ -825,7 +825,7 @@ Returns if the value is an int and the value</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1522', 1522)" onmouseover="showTip(event, '1522', 1522)">
-            writeCDataElement (...)
+            writeCDataElement(...)
           </code>
           <div class="tip" id="1522">
             <strong>Signature:</strong> elementName:string -&gt; data:string -&gt; writer:XmlWriter -&gt; XmlWriter<br />
@@ -931,7 +931,7 @@ Returns if the value is an int and the value</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1526', 1526)" onmouseover="showTip(event, '1526', 1526)">
-            XslTransformer text
+            XslTransformer(text)
           </code>
           <div class="tip" id="1526">
             <strong>Signature:</strong> text:string -&gt; XslCompiledTransform<br />
@@ -1062,7 +1062,7 @@ Returns if the value is an int and the value</p>
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.322</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.323</a></li>
 									</ul>
 								</div>
 							</div>

@@ -291,7 +291,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '776', 776)" onmouseover="showTip(event, '776', 776)">
-            changeExtension(extension fileName)
+            Path.changeExtension extension fileName
           </code>
           <div class="tip" id="776">
             <strong>Signature:</strong> extension:string -&gt; fileName:string -&gt; string<br />
@@ -316,7 +316,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '777', 777)" onmouseover="showTip(event, '777', 777)">
-            combine(path1 path2)
+            Path.combine path1 path2
           </code>
           <div class="tip" id="777">
             <strong>Signature:</strong> path1:string -&gt; path2:string -&gt; string<br />
@@ -336,7 +336,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '778', 778)" onmouseover="showTip(event, '778', 778)">
-            combineTrimEnd(path1 path2)
+            Path.combineTrimEnd path1 path2
           </code>
           <div class="tip" id="778">
             <strong>Signature:</strong> path1:string -&gt; path2:string -&gt; string<br />
@@ -356,7 +356,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '779', 779)" onmouseover="showTip(event, '779', 779)">
-            convertWindowsToCurrentPath(windowsPath)
+            Path.convertWindowsToCurrentPath(...)
           </code>
           <div class="tip" id="779">
             <strong>Signature:</strong> windowsPath:string -&gt; string<br />
@@ -376,7 +376,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '780', 780)" onmouseover="showTip(event, '780', 780)">
-            directorySeparator
+            Path.directorySeparator
           </code>
           <div class="tip" id="780">
             <strong>Signature:</strong> string<br />
@@ -396,7 +396,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '781', 781)" onmouseover="showTip(event, '781', 781)">
-            getDirectory(path)
+            Path.getDirectory(path)
           </code>
           <div class="tip" id="781">
             <strong>Signature:</strong> path:string -&gt; string<br />
@@ -420,7 +420,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '782', 782)" onmouseover="showTip(event, '782', 782)">
-            getFullName(p)
+            Path.getFullName(p)
           </code>
           <div class="tip" id="782">
             <strong>Signature:</strong> p:string -&gt; string<br />
@@ -438,7 +438,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '783', 783)" onmouseover="showTip(event, '783', 783)">
-            hasExtension(extension fileName)
+            Path.hasExtension extension fileName
           </code>
           <div class="tip" id="783">
             <strong>Signature:</strong> extension:string -&gt; fileName:string -&gt; bool<br />
@@ -463,7 +463,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '784', 784)" onmouseover="showTip(event, '784', 784)">
-            isDirectory(path)
+            Path.isDirectory(path)
           </code>
           <div class="tip" id="784">
             <strong>Signature:</strong> path:string -&gt; bool<br />
@@ -483,7 +483,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '785', 785)" onmouseover="showTip(event, '785', 785)">
-            isFile(path)
+            Path.isFile(path)
           </code>
           <div class="tip" id="785">
             <strong>Signature:</strong> path:string -&gt; bool<br />
@@ -503,7 +503,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '786', 786)" onmouseover="showTip(event, '786', 786)">
-            isValidPath(path)
+            Path.isValidPath(path)
           </code>
           <div class="tip" id="786">
             <strong>Signature:</strong> path:string -&gt; bool<br />
@@ -523,7 +523,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '787', 787)" onmouseover="showTip(event, '787', 787)">
-            normalizeFileName(fileName)
+            Path.normalizeFileName(fileName)
           </code>
           <div class="tip" id="787">
             <strong>Signature:</strong> fileName:string -&gt; string<br />
@@ -543,7 +543,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '788', 788)" onmouseover="showTip(event, '788', 788)">
-            shortenCurrentDirectory(path)
+            Path.shortenCurrentDirectory(path)
           </code>
           <div class="tip" id="788">
             <strong>Signature:</strong> path:string -&gt; string<br />
@@ -563,7 +563,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '789', 789)" onmouseover="showTip(event, '789', 789)">
-            toRelativeFrom
+            Path.toRelativeFrom
           </code>
           <div class="tip" id="789">
             <strong>Signature:</strong> string -&gt; string -&gt; string<br />
@@ -581,7 +581,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '790', 790)" onmouseover="showTip(event, '790', 790)">
-            toRelativeFromCurrent(path)
+            Path.toRelativeFromCurrent(path)
           </code>
           <div class="tip" id="790">
             <strong>Signature:</strong> path:string -&gt; string<br />
@@ -702,7 +702,7 @@
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.322</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.323</a></li>
 									</ul>
 								</div>
 							</div>

@@ -359,7 +359,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1089', 1089)" onmouseover="showTip(event, '1089', 1089)">
-            createClient(user password)
+            GitHub.createClient user password
           </code>
           <div class="tip" id="1089">
             <strong>Signature:</strong> user:string -&gt; password:string -&gt; Async&lt;GitHubClient&gt;<br />
@@ -379,7 +379,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1090', 1090)" onmouseover="showTip(event, '1090', 1090)">
-            createClientWithToken(token)
+            GitHub.createClientWithToken(token)
           </code>
           <div class="tip" id="1090">
             <strong>Signature:</strong> token:string -&gt; Async&lt;GitHubClient&gt;<br />
@@ -399,7 +399,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1091', 1091)" onmouseover="showTip(event, '1091', 1091)">
-            createGHEClient(url user password)
+            GitHub.createGHEClient url user password
           </code>
           <div class="tip" id="1091">
             <strong>Signature:</strong> url:string -&gt; user:string -&gt; password:string -&gt; Async&lt;GitHubClient&gt;<br />
@@ -419,7 +419,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1092', 1092)" onmouseover="showTip(event, '1092', 1092)">
-            createGHEClientWithToken(url token)
+            GitHub.createGHEClientWithToken(...)
           </code>
           <div class="tip" id="1092">
             <strong>Signature:</strong> url:string -&gt; token:string -&gt; Async&lt;GitHubClient&gt;<br />
@@ -439,7 +439,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1093', 1093)" onmouseover="showTip(event, '1093', 1093)">
-            createRelease(...)
+            GitHub.createRelease(...)
           </code>
           <div class="tip" id="1093">
             <strong>Signature:</strong> owner:string -&gt; repoName:string -&gt; tagName:string -&gt; setParams:(CreateReleaseParams -&gt; CreateReleaseParams) -&gt; client:Async&lt;GitHubClient&gt; -&gt; Async&lt;Release&gt;<br />
@@ -467,7 +467,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1094', 1094)" onmouseover="showTip(event, '1094', 1094)">
-            downloadAsset(id destination release)
+            GitHub.downloadAsset(...)
           </code>
           <div class="tip" id="1094">
             <strong>Signature:</strong> id:int -&gt; destination:string -&gt; release:Async&lt;Release&gt; -&gt; Async&lt;unit&gt;<br />
@@ -487,7 +487,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1095', 1095)" onmouseover="showTip(event, '1095', 1095)">
-            downloadAssets(destination release)
+            GitHub.downloadAssets(...)
           </code>
           <div class="tip" id="1095">
             <strong>Signature:</strong> destination:string -&gt; release:Async&lt;Release&gt; -&gt; Async&lt;unit&gt;<br />
@@ -507,7 +507,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1096', 1096)" onmouseover="showTip(event, '1096', 1096)">
-            draftNewRelease(...)
+            GitHub.draftNewRelease(...)
           </code>
           <div class="tip" id="1096">
             <strong>Signature:</strong> owner:string -&gt; repoName:string -&gt; tagName:string -&gt; prerelease:bool -&gt; notes:seq&lt;string&gt; -&gt; client:Async&lt;GitHubClient&gt; -&gt; Async&lt;Release&gt;<br />
@@ -536,7 +536,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1097', 1097)" onmouseover="showTip(event, '1097', 1097)">
-            getLastRelease(owner repoName client)
+            GitHub.getLastRelease(...)
           </code>
           <div class="tip" id="1097">
             <strong>Signature:</strong> owner:string -&gt; repoName:string -&gt; client:Async&lt;GitHubClient&gt; -&gt; Async&lt;Release&gt;<br />
@@ -556,7 +556,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1098', 1098)" onmouseover="showTip(event, '1098', 1098)">
-            getReleaseByTag(...)
+            GitHub.getReleaseByTag(...)
           </code>
           <div class="tip" id="1098">
             <strong>Signature:</strong> owner:string -&gt; repoName:string -&gt; tagName:string -&gt; client:Async&lt;GitHubClient&gt; -&gt; Async&lt;Release&gt;<br />
@@ -576,7 +576,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1099', 1099)" onmouseover="showTip(event, '1099', 1099)">
-            publishDraft(release)
+            GitHub.publishDraft(release)
           </code>
           <div class="tip" id="1099">
             <strong>Signature:</strong> release:Async&lt;Release&gt; -&gt; Async&lt;unit&gt;<br />
@@ -596,7 +596,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1100', 1100)" onmouseover="showTip(event, '1100', 1100)">
-            uploadFile(fileName release)
+            GitHub.uploadFile fileName release
           </code>
           <div class="tip" id="1100">
             <strong>Signature:</strong> fileName:string -&gt; release:Async&lt;Release&gt; -&gt; Async&lt;Release&gt;<br />
@@ -616,7 +616,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1101', 1101)" onmouseover="showTip(event, '1101', 1101)">
-            uploadFiles(fileNames release)
+            GitHub.uploadFiles fileNames release
           </code>
           <div class="tip" id="1101">
             <strong>Signature:</strong> fileNames:seq&lt;string&gt; -&gt; release:Async&lt;Release&gt; -&gt; Async&lt;Release&gt;<br />
@@ -739,7 +739,7 @@
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.322</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.2.1-alpha.323</a></li>
 									</ul>
 								</div>
 							</div>
