@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>MSBuildLogger - FAKE - F# Make</title>
+		<title>CreateReleaseOptions - FAKE - F# Make</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Steffen Forkmann, Mauricio Scheffer, Colin Bull, Matthias Dittrich" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -266,7 +266,7 @@
                                     <p>
                                         <strong>Note: This is the migration API reference for FAKE 5. The new (modularized) API documentation can be found 
                                             <a href="/apidocs/v5/index.html">here</a>.
-                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-dotnet-msbuildlogger.html">here if exists in a module</a>.
+                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-tools-octo-createreleaseoptions.html">here if exists in a module</a>.
                                             More information regarding the migration can be found <a href="/fake-migrate-to-fake-5.html">here</a>
                                         </strong>
                                     </p>
@@ -278,68 +278,233 @@
 <p>
 
 </p>
-<a name="MSBuildLogger" class="anchor" href="#MSBuildLogger"><h1>MSBuildLogger</h1></a>
-
+<a name="CreateReleaseOptions" class="anchor" href="#CreateReleaseOptions" ><h1>CreateReleaseOptions</h1></a>
 <div class="xmldoc">
-<p>Contains Logger implementations for MSBuild.</p>
+<p>Options for creating a new release</p>
 
 </div>
-
-<!-- Render nested types and modules, if there are any -->
-  <h2>Nested types and modules</h2>
-  <div>
-      <table class="table table-bordered type-list">
-    <thead>
-      <tr><td>Type</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td class="type-name">
-            <a href="fake-dotnet-msbuildlogger-errorlogger.html">ErrorLogger</a>
-          </td>
-          <td class="xmldoc">
-            <p>TeamCity Logger for MSBuild</p>
-
-
-          </td>
-        </tr>
-        <tr>
-          <td class="type-name">
-            <a href="fake-dotnet-msbuildlogger-msbuildlogger.html">MSBuildLogger</a>
-          </td>
-          <td class="xmldoc">
-            <p>Abstract MSBuild Logger class.</p>
-
-
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-  <a name="Functions and values" class="anchor" href="#Functions and values"><h3>Functions and values</h3></a>
+  <a name="Record Fields" class="anchor" href="#Record Fields"><h3>Record Fields</h3></a>
   <table class="table table-bordered member-list">
     <thead>
-      <tr><td>Function or value</td><td>Description</td></tr>
+      <tr><td>Record Field</td><td>Description</td></tr>
     </thead>
     <tbody>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1676', 1676)" onmouseover="showTip(event, '1676', 1676)">
-            ErrorLoggerFile
+          <code onmouseout="hideTip(event, '6490', 6490)" onmouseover="showTip(event, '6490', 6490)">
+            Channel
           </code>
-          <div class="tip" id="1676">
+          <div class="tip" id="6490">
+            <strong>Signature:</strong> string option<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L54-54" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Channel to use for the new release</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6491', 6491)" onmouseover="showTip(event, '6491', 6491)">
+            Common
+          </code>
+          <div class="tip" id="6491">
+            <strong>Signature:</strong> Options<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L60-60" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>common parameters</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6492', 6492)" onmouseover="showTip(event, '6492', 6492)">
+            IgnoreChannelRules
+          </code>
+          <div class="tip" id="6492">
+            <strong>Signature:</strong> bool<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L57-57" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Ignore package version matching rules</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6493', 6493)" onmouseover="showTip(event, '6493', 6493)">
+            IgnoreExisting
+          </code>
+          <div class="tip" id="6493">
+            <strong>Signature:</strong> bool<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L51-51" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>If a release with the version number already exists, ignore it</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6494', 6494)" onmouseover="showTip(event, '6494', 6494)">
+            Packages
+          </code>
+          <div class="tip" id="6494">
+            <strong>Signature:</strong> string list<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L39-39" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Version number to use for a package in the release</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6495', 6495)" onmouseover="showTip(event, '6495', 6495)">
+            PackagesFolder
+          </code>
+          <div class="tip" id="6495">
+            <strong>Signature:</strong> string option<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L42-42" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>A folder containing NuGet packages from which we should get versions</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6496', 6496)" onmouseover="showTip(event, '6496', 6496)">
+            PackageVersion
+          </code>
+          <div class="tip" id="6496">
             <strong>Signature:</strong> string<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.MSBuild/MSBuildLogger.fs#L46-46" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L36-36" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          <p>The ErrorLogFile</p>
+          <p>Default version of all packages to use for this release</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6497', 6497)" onmouseover="showTip(event, '6497', 6497)">
+            Project
+          </code>
+          <div class="tip" id="6497">
+            <strong>Signature:</strong> string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L30-30" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Name of the project</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6498', 6498)" onmouseover="showTip(event, '6498', 6498)">
+            ReleaseNotes
+          </code>
+          <div class="tip" id="6498">
+            <strong>Signature:</strong> string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L45-45" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Release Notes for the new release</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6499', 6499)" onmouseover="showTip(event, '6499', 6499)">
+            ReleaseNotesFile
+          </code>
+          <div class="tip" id="6499">
+            <strong>Signature:</strong> string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L48-48" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Path to a file that contains Release Notes for the new release</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6500', 6500)" onmouseover="showTip(event, '6500', 6500)">
+            Version
+          </code>
+          <div class="tip" id="6500">
+            <strong>Signature:</strong> string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L33-33" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Release number to use for the new release</p>
 
 
         </td>

@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>ErrorLogger - FAKE - F# Make</title>
+		<title>DeployReleaseOptions - FAKE - F# Make</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Steffen Forkmann, Mauricio Scheffer, Colin Bull, Matthias Dittrich" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -266,7 +266,7 @@
                                     <p>
                                         <strong>Note: This is the migration API reference for FAKE 5. The new (modularized) API documentation can be found 
                                             <a href="/apidocs/v5/index.html">here</a>.
-                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-dotnet-msbuildlogger-errorlogger.html">here if exists in a module</a>.
+                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-tools-octo-deployreleaseoptions.html">here if exists in a module</a>.
                                             More information regarding the migration can be found <a href="/fake-migrate-to-fake-5.html">here</a>
                                         </strong>
                                     </p>
@@ -278,33 +278,262 @@
 <p>
 
 </p>
-<a name="ErrorLogger" class="anchor" href="#ErrorLogger" ><h1>ErrorLogger</h1></a>
+<a name="DeployReleaseOptions" class="anchor" href="#DeployReleaseOptions" ><h1>DeployReleaseOptions</h1></a>
 <div class="xmldoc">
-<p>TeamCity Logger for MSBuild</p>
+<p>Options for deploying a release to an environment</p>
 
 </div>
-  <a name="Constructors" class="anchor" href="#Constructors"><h3>Constructors</h3></a>
+  <a name="Record Fields" class="anchor" href="#Record Fields"><h3>Record Fields</h3></a>
   <table class="table table-bordered member-list">
     <thead>
-      <tr><td>Constructor</td><td>Description</td></tr>
+      <tr><td>Record Field</td><td>Description</td></tr>
     </thead>
     <tbody>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '5242', 5242)" onmouseover="showTip(event, '5242', 5242)">
-            new()
+          <code onmouseout="hideTip(event, '6506', 6506)" onmouseover="showTip(event, '6506', 6506)">
+            Channel
           </code>
-          <div class="tip" id="5242">
-            <strong>Signature:</strong> unit -&gt; ErrorLogger<br />
+          <div class="tip" id="6506">
+            <strong>Signature:</strong> string option<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.MSBuild/MSBuildLogger.fs#L49-49" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L102-102" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Channel to use for the new release</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6507', 6507)" onmouseover="showTip(event, '6507', 6507)">
+            Common
+          </code>
+          <div class="tip" id="6507">
+            <strong>Signature:</strong> Options<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L105-105" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Common parameters</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6508', 6508)" onmouseover="showTip(event, '6508', 6508)">
+            DeploymentCheckSleepCycle
+          </code>
+          <div class="tip" id="6508">
+            <strong>Signature:</strong> TimeSpan option<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L94-94" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Specifies how much time should elapse between deployment status
+checks (default: 10 seconds)</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6509', 6509)" onmouseover="showTip(event, '6509', 6509)">
+            DeploymentTimeout
+          </code>
+          <div class="tip" id="6509">
+            <strong>Signature:</strong> TimeSpan option<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L90-90" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Specifies maximum time that deployment can take
+(default: 10 minutes)</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6510', 6510)" onmouseover="showTip(event, '6510', 6510)">
+            DeployTo
+          </code>
+          <div class="tip" id="6510">
+            <strong>Signature:</strong> string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L68-68" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Environment to deploy to</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6511', 6511)" onmouseover="showTip(event, '6511', 6511)">
+            Force
+          </code>
+          <div class="tip" id="6511">
+            <strong>Signature:</strong> bool<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L76-76" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>If a project is configured to skip packages with already-installed
+versions, override this setting to force re-deployment</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6512', 6512)" onmouseover="showTip(event, '6512', 6512)">
+            NoRawLog
+          </code>
+          <div class="tip" id="6512">
+            <strong>Signature:</strong> bool<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L82-82" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Don't print the raw log of failed tasks</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6513', 6513)" onmouseover="showTip(event, '6513', 6513)">
+            Progress
+          </code>
+          <div class="tip" id="6513">
+            <strong>Signature:</strong> bool<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L86-86" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Show progress of the deployment.
+(Sets --waitfordeployment and --norawlog to true.)</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6514', 6514)" onmouseover="showTip(event, '6514', 6514)">
+            Project
+          </code>
+          <div class="tip" id="6514">
+            <strong>Signature:</strong> string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L65-65" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Name of the project</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6515', 6515)" onmouseover="showTip(event, '6515', 6515)">
+            SpecificMachines
+          </code>
+          <div class="tip" id="6515">
+            <strong>Signature:</strong> string option<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L99-99" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>A comma-separated list of machine names to target in the
+deployed environment. If not specified, all machines in
+the environment will be considered.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6516', 6516)" onmouseover="showTip(event, '6516', 6516)">
+            Version
+          </code>
+          <div class="tip" id="6516">
+            <strong>Signature:</strong> string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L72-72" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Version number of the release to deploy; Specify "latest" for
+the latest release</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6517', 6517)" onmouseover="showTip(event, '6517', 6517)">
+            WaitForDeployment
+          </code>
+          <div class="tip" id="6517">
+            <strong>Signature:</strong> bool<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Tools.Octo/Octo.fs#L79-79" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Whether to wait synchronously for deployment to finish</p>
+
+
         </td>
       </tr>
     </tbody>
