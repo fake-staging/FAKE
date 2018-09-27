@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>MSBuildOptions - FAKE - F# Make</title>
+		<title>MSBuildLogger - FAKE - F# Make</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Steffen Forkmann, Mauricio Scheffer, Colin Bull, Matthias Dittrich" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -266,7 +266,7 @@
                                     <p>
                                         <strong>Note: This is the migration API reference for FAKE 5. The new (modularized) API documentation can be found 
                                             <a href="/apidocs/v5/index.html">here</a>.
-                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-dotnet-dotnet-msbuildoptions.html">here if exists in a module</a>.
+                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-dotnet-msbuildlogger-msbuildlogger.html">here if exists in a module</a>.
                                             More information regarding the migration can be found <a href="/fake-migrate-to-fake-5.html">here</a>
                                         </strong>
                                     </p>
@@ -278,49 +278,29 @@
 <p>
 
 </p>
-<a name="MSBuildOptions" class="anchor" href="#MSBuildOptions" ><h1>MSBuildOptions</h1></a>
+<a name="MSBuildLogger" class="anchor" href="#MSBuildLogger" ><h1>MSBuildLogger</h1></a>
 <div class="xmldoc">
-<p>dotnet restore command options</p>
+<p>Abstract MSBuild Logger class.</p>
 
 </div>
-  <a name="Record Fields" class="anchor" href="#Record Fields"><h3>Record Fields</h3></a>
+  <a name="Constructors" class="anchor" href="#Constructors"><h3>Constructors</h3></a>
   <table class="table table-bordered member-list">
     <thead>
-      <tr><td>Record Field</td><td>Description</td></tr>
+      <tr><td>Constructor</td><td>Description</td></tr>
     </thead>
     <tbody>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '5088', 5088)" onmouseover="showTip(event, '5088', 5088)">
-            Common
+          <code onmouseout="hideTip(event, '5243', 5243)" onmouseover="showTip(event, '5243', 5243)">
+            new()
           </code>
-          <div class="tip" id="5088">
-            <strong>Signature:</strong> Options<br />
+          <div class="tip" id="5243">
+            <strong>Signature:</strong> unit -&gt; MSBuildLogger<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L833-833" class="github-link">
-              <img src="/assets/img/github.png" class="normal" />
-              <img src="/assets/img/github-blue.png" class="hover" />
-            </a>
-          <p>Common tool options</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5089', 5089)" onmouseover="showTip(event, '5089', 5089)">
-            MSBuildParams
-          </code>
-          <div class="tip" id="5089">
-            <strong>Signature:</strong> CliArguments<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L834-834" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.MSBuild/MSBuildLogger.fs#L16-16" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -338,107 +318,20 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '5090', 5090)" onmouseover="showTip(event, '5090', 5090)">
-            x.Environment
+          <code onmouseout="hideTip(event, '5244', 5244)" onmouseover="showTip(event, '5244', 5244)">
+            x.RegisterEvents(arg1)
           </code>
-          <div class="tip" id="5090">
-            <strong>Signature:</strong> Map&lt;string,string&gt;<br />
+          <div class="tip" id="5244">
+            <strong>Signature:</strong> IEventSource -&gt; unit<br />
+              <strong>Modifiers:</strong> abstract<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L844-844" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.MSBuild/MSBuildLogger.fs#L21-21" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          <p>Gets the current environment</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5091', 5091)" onmouseover="showTip(event, '5091', 5091)">
-            x.WithCommon(f)
-          </code>
-          <div class="tip" id="5091">
-            <strong>Signature:</strong> (f:(Options -&gt; Options)) -&gt; MSBuildOptions<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L854-854" class="github-link">
-              <img src="/assets/img/github.png" class="normal" />
-              <img src="/assets/img/github-blue.png" class="hover" />
-            </a>
-          <p>Changes the "Common" properties according to the given function</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5092', 5092)" onmouseover="showTip(event, '5092', 5092)">
-            x.WithEnvironment(map)
-          </code>
-          <div class="tip" id="5092">
-            <strong>Signature:</strong> map:Map&lt;string,string&gt; -&gt; MSBuildOptions<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L846-846" class="github-link">
-              <img src="/assets/img/github.png" class="normal" />
-              <img src="/assets/img/github-blue.png" class="hover" />
-            </a>
-          <p>Sets the current environment variables.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5093', 5093)" onmouseover="showTip(event, '5093', 5093)">
-            x.WithRedirectOutput(shouldRedirect)
-          </code>
-          <div class="tip" id="5093">
-            <strong>Signature:</strong> shouldRedirect:bool -&gt; MSBuildOptions<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L850-850" class="github-link">
-              <img src="/assets/img/github.png" class="normal" />
-              <img src="/assets/img/github-blue.png" class="hover" />
-            </a>
-          <p>Sets a value indicating whether the output for the given process is redirected.</p>
-
-
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <a name="Static members" class="anchor" href="#Static members"><h3>Static members</h3></a>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Static member</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5094', 5094)" onmouseover="showTip(event, '5094', 5094)">
-            MSBuildOptions.Create()
-          </code>
-          <div class="tip" id="5094">
-            <strong>Signature:</strong> unit -&gt; MSBuildOptions<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L838-838" class="github-link">
-              <img src="/assets/img/github.png" class="normal" />
-              <img src="/assets/img/github-blue.png" class="hover" />
-            </a>
-          <p>Parameter default values.</p>
+          <p>Abstract function which registers an event listener.</p>
 
 
         </td>
@@ -550,7 +443,7 @@
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.0</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.1</a></li>
 									</ul>
 								</div>
 							</div>

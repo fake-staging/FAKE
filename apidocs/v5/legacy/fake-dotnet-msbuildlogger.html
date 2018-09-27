@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>KeyInfo - FAKE - F# Make</title>
+		<title>MSBuildLogger - FAKE - F# Make</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Steffen Forkmann, Mauricio Scheffer, Colin Bull, Matthias Dittrich" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -266,7 +266,7 @@
                                     <p>
                                         <strong>Note: This is the migration API reference for FAKE 5. The new (modularized) API documentation can be found 
                                             <a href="/apidocs/v5/index.html">here</a>.
-                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-core-vault-keyinfo.html">here if exists in a module</a>.
+                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-dotnet-msbuildlogger.html">here if exists in a module</a>.
                                             More information regarding the migration can be found <a href="/fake-migrate-to-fake-5.html">here</a>
                                         </strong>
                                     </p>
@@ -278,53 +278,68 @@
 <p>
 
 </p>
-<a name="KeyInfo" class="anchor" href="#KeyInfo" ><h1>KeyInfo</h1></a>
+<a name="MSBuildLogger" class="anchor" href="#MSBuildLogger"><h1>MSBuildLogger</h1></a>
+
 <div class="xmldoc">
-<p>The key used to decrypt/encrypt variables</p>
+<p>Contains Logger implementations for MSBuild.</p>
 
 </div>
-  <a name="Record Fields" class="anchor" href="#Record Fields"><h3>Record Fields</h3></a>
+
+<!-- Render nested types and modules, if there are any -->
+  <h2>Nested types and modules</h2>
+  <div>
+      <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="fake-dotnet-msbuildlogger-errorlogger.html">ErrorLogger</a>
+          </td>
+          <td class="xmldoc">
+            <p>TeamCity Logger for MSBuild</p>
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="fake-dotnet-msbuildlogger-msbuildlogger.html">MSBuildLogger</a>
+          </td>
+          <td class="xmldoc">
+            <p>Abstract MSBuild Logger class.</p>
+
+
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+  <a name="Functions and values" class="anchor" href="#Functions and values"><h3>Functions and values</h3></a>
   <table class="table table-bordered member-list">
     <thead>
-      <tr><td>Record Field</td><td>Description</td></tr>
+      <tr><td>Function or value</td><td>Description</td></tr>
     </thead>
     <tbody>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '4616', 4616)" onmouseover="showTip(event, '4616', 4616)">
-            Iv
+          <code onmouseout="hideTip(event, '1676', 1676)" onmouseover="showTip(event, '1676', 1676)">
+            ErrorLoggerFile
           </code>
-          <div class="tip" id="4616">
+          <div class="tip" id="1676">
             <strong>Signature:</strong> string<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Vault/Vault.fs#L69-69" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.MSBuild/MSBuildLogger.fs#L46-46" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          <p>The IV-Bytes (16 byte as base64 encoded string)</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '4617', 4617)" onmouseover="showTip(event, '4617', 4617)">
-            KeyFile
-          </code>
-          <div class="tip" id="4617">
-            <strong>Signature:</strong> string<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Vault/Vault.fs#L67-67" class="github-link">
-              <img src="/assets/img/github.png" class="normal" />
-              <img src="/assets/img/github-blue.png" class="hover" />
-            </a>
-          <p>The file with the key (32 byte as base64 encoded string saved in utf-8)</p>
+          <p>The ErrorLogFile</p>
 
 
         </td>
@@ -436,7 +451,7 @@
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.0</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.1</a></li>
 									</ul>
 								</div>
 							</div>
