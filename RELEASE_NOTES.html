@@ -189,6 +189,7 @@
 															<a href="/apidocs/v5/index.html#Fake.Sql">Sql</a>
 															<ul>
 																<li><a href="/sql-dacpac.html">DacPac</a></li>
+																<li><a href="/sql-sqlserver.html">SQL Server</a></li>
 															</ul>
 														</li>
 														<li>
@@ -267,9 +268,14 @@
 									<!-- Content -->
                       <article>
 <h1><a name="Release-Notes" class="anchor" href="#Release-Notes">Release Notes</a></h1>
-<h2><a name="5-7-3-alpha" class="anchor" href="#5-7-3-alpha">5.7.3-alpha</a></h2>
+<h2><a name="5-8-0-2018-09-27" class="anchor" href="#5-8-0-2018-09-27">5.8.0 - 2018-09-27</a></h2>
 <ul>
-<li>tbd</li>
+<li>NEW: Fake.Sql.SqlServer module - <a href="https://github.com/fsharp/FAKE/pull/2074">https://github.com/fsharp/FAKE/pull/2074</a></li>
+<li>ENHANCEMENT: Some modules are now usable without FAKE context (ie. in your regular projects)</li>
+<li>ENHANCEMENT: Inform when the <code>target</code> environment variable is used - <a href="https://github.com/fsharp/FAKE/issues/2107">https://github.com/fsharp/FAKE/issues/2107</a></li>
+<li>BUGFIX: Environment variables are case insensitive on windows, fake will now throw exceptions if it detects invalid environment maps</li>
+<li>BUGFIX: MSBuild properties containing special characters lead to errors - <a href="https://github.com/fsharp/FAKE/issues/2112">https://github.com/fsharp/FAKE/issues/2112</a></li>
+<li>DOCS: Fix syntax errors in dacpac docs - <a href="https://github.com/fsharp/FAKE/pull/2115">https://github.com/fsharp/FAKE/pull/2115</a></li>
 </ul>
 <h2><a name="5-7-2-2018-09-24" class="anchor" href="#5-7-2-2018-09-24">5.7.2 - 2018-09-24</a></h2>
 <ul>
@@ -2065,7 +2071,7 @@ New tasks:
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.7.3-alpha.521</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.0</a></li>
 									</ul>
 								</div>
 							</div>

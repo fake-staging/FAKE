@@ -188,6 +188,7 @@
 															<a href="/apidocs/v5/index.html#Fake.Sql">Sql</a>
 															<ul>
 																<li><a href="/sql-dacpac.html">DacPac</a></li>
+																<li><a href="/sql-sqlserver.html">SQL Server</a></li>
 															</ul>
 														</li>
 														<li>
@@ -779,7 +780,7 @@ This file can exist in the working directory or any of the parent directories</p
 <div class="tip" id="fs10">val defaults : DotNet.MSBuildOptions</div>
 <div class="tip" id="fs11">module DotNet<br /><br />from Fake.DotNet</div>
 <div class="tip" id="fs12">type MSBuildOptions =<br />&#160;&#160;{Common: Options;<br />&#160;&#160;&#160;MSBuildParams: CliArguments;}<br />&#160;&#160;&#160;&#160;member WithCommon : f:(Options -&gt; Options) -&gt; MSBuildOptions<br />&#160;&#160;&#160;&#160;member WithEnvironment : map:Map&lt;string,string&gt; -&gt; MSBuildOptions<br />&#160;&#160;&#160;&#160;member WithRedirectOutput : shouldRedirect:bool -&gt; MSBuildOptions<br />&#160;&#160;&#160;&#160;member Environment : Map&lt;string,string&gt;<br />&#160;&#160;&#160;&#160;static member Create : unit -&gt; MSBuildOptions</div>
-<div class="tip" id="fs13">type MSBuildParams =<br />&#160;&#160;{ToolPath: string;<br />&#160;&#160;&#160;Targets: string list;<br />&#160;&#160;&#160;Properties: (string * string) list;<br />&#160;&#160;&#160;MaxCpuCount: int option option;<br />&#160;&#160;&#160;DoRestore: bool;<br />&#160;&#160;&#160;NoLogo: bool;<br />&#160;&#160;&#160;NodeReuse: bool;<br />&#160;&#160;&#160;RestorePackagesFlag: bool;<br />&#160;&#160;&#160;ToolsVersion: string option;<br />&#160;&#160;&#160;Verbosity: MSBuildVerbosity option;<br />&#160;&#160;&#160;...}<br />&#160;&#160;&#160;&#160;member WithEnvironment : map:Map&lt;string,string&gt; -&gt; MSBuildParams<br />&#160;&#160;&#160;&#160;static member Create : unit -&gt; MSBuildParams</div>
+<div class="tip" id="fs13">type MSBuildParams =<br />&#160;&#160;{ToolPath: string;<br />&#160;&#160;&#160;WorkingDirectory: string;<br />&#160;&#160;&#160;Targets: string list;<br />&#160;&#160;&#160;Properties: (string * string) list;<br />&#160;&#160;&#160;MaxCpuCount: int option option;<br />&#160;&#160;&#160;DoRestore: bool;<br />&#160;&#160;&#160;NoLogo: bool;<br />&#160;&#160;&#160;NodeReuse: bool;<br />&#160;&#160;&#160;RestorePackagesFlag: bool;<br />&#160;&#160;&#160;ToolsVersion: string option;<br />&#160;&#160;&#160;...}<br />&#160;&#160;&#160;&#160;member WithEnvironment : map:Map&lt;string,string&gt; -&gt; MSBuildParams<br />&#160;&#160;&#160;&#160;static member Create : unit -&gt; MSBuildParams</div>
 <div class="tip" id="fs14">DotNet.MSBuildOptions.MSBuildParams: MSBuild.CliArguments</div>
 <div class="tip" id="fs15">val msbuild : setParams:(DotNet.MSBuildOptions -&gt; DotNet.MSBuildOptions) -&gt; project:string -&gt; unit</div>
 
@@ -1233,7 +1234,7 @@ This file can exist in the working directory or any of the parent directories</p
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.7.3-alpha.521</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.0</a></li>
 									</ul>
 								</div>
 							</div>

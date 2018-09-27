@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>MSBuildLogger - FAKE - F# Make</title>
+		<title>ServerInfo - FAKE - F# Make</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Steffen Forkmann, Mauricio Scheffer, Colin Bull, Matthias Dittrich" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -188,6 +188,7 @@
 															<a href="/apidocs/v5/index.html#Fake.Sql">Sql</a>
 															<ul>
 																<li><a href="/sql-dacpac.html">DacPac</a></li>
+																<li><a href="/sql-sqlserver.html">SQL Server</a></li>
 															</ul>
 														</li>
 														<li>
@@ -262,13 +263,18 @@
 						<div class="inner">
 							<div class="container">
 								<div id="content">
-                                    <p>
-                                        <strong>Note: This is the migration API reference for FAKE 5. The new (modularized) API documentation can be found 
-                                            <a href="/apidocs/v5/index.html">here</a>.
-                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-dotnet-msbuildlogger.html">here if exists in a module</a>.
-                                            More information regarding the migration can be found <a href="/fake-migrate-to-fake-5.html">here</a>
-                                        </strong>
-                                    </p>
+                                            <div class="alert alert-info">
+                                                <h5>INFO</h5>
+                                                <p>This API documentation is for FAKE version 5.0 or later. The old API documentation can be found
+                                                    <a href="/apidocs/v5/legacy/index.html">here for migration</a> or <a href="/apidocs/v4/index.html">here for fake 4</a>
+                                                </p>
+                                                <p>
+                                                    This is part of the <a href="https://www.nuget.org/packages/Fake.Sql.SqlServer" >Fake.Sql.SqlServer</a> module.
+                                                </p>
+                                            </div> 
+                                
+                                   
+                                    
 									<!-- Content -->
                       <article>
           			
@@ -277,45 +283,12 @@
 <p>
 
 </p>
-<a name="MSBuildLogger" class="anchor" href="#MSBuildLogger"><h1>MSBuildLogger</h1></a>
+<a name="ServerInfo" class="anchor" href="#ServerInfo"><h1>ServerInfo</h1></a>
 
 <div class="xmldoc">
-<p>Contains Logger implementations for MSBuild.</p>
-
 </div>
 
 <!-- Render nested types and modules, if there are any -->
-  <h2>Nested types and modules</h2>
-  <div>
-      <table class="table table-bordered type-list">
-    <thead>
-      <tr><td>Type</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td class="type-name">
-            <a href="fake-dotnet-msbuildlogger-errorlogger.html">ErrorLogger</a>
-          </td>
-          <td class="xmldoc">
-            <p>TeamCity Logger for MSBuild</p>
-
-
-          </td>
-        </tr>
-        <tr>
-          <td class="type-name">
-            <a href="fake-dotnet-msbuildlogger-msbuildlogger.html">MSBuildLogger</a>
-          </td>
-          <td class="xmldoc">
-            <p>Abstract MSBuild Logger class.</p>
-
-
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
 
   <a name="Functions and values" class="anchor" href="#Functions and values"><h3>Functions and values</h3></a>
   <table class="table table-bordered member-list">
@@ -326,21 +299,19 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1676', 1676)" onmouseover="showTip(event, '1676', 1676)">
-            ErrorLoggerFile
+          <code onmouseout="hideTip(event, '1061', 1061)" onmouseover="showTip(event, '1061', 1061)">
+            create(connectionString)
           </code>
-          <div class="tip" id="1676">
-            <strong>Signature:</strong> string<br />
+          <div class="tip" id="1061">
+            <strong>Signature:</strong> connectionString:string -&gt; ServerInfo<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.MSBuild/MSBuildLogger.fs#L46-46" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Sql.SqlServer/Sql.SqlServer.fs#L22-22" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          <p>The ErrorLogFile</p>
-
-
+          
         </td>
       </tr>
     </tbody>
@@ -450,7 +421,7 @@
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.7.3-alpha.521</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.0</a></li>
 									</ul>
 								</div>
 							</div>
