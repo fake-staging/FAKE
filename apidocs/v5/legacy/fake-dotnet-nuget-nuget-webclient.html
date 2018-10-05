@@ -290,31 +290,8 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '5628', 5628)" onmouseover="showTip(event, '5628', 5628)">
-            x.AllowReadStreamBuffering()
-          </code>
-          <div class="tip" id="5628">
-            <strong>Signature:</strong> unit -&gt; unit<br />
-                                        <span>
-                    <strong>Attributes:</strong><br />
-[&lt;Obsolete(&quot;This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.&quot;, true)&gt;]<br />
-[&lt;EditorBrowsable(1)&gt;]<br />
-                </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-            <div class="alert alert-warning">
-                <h5>OBSOLETE</h5>
-                <p>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</p>
-            </div> 
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
           <code onmouseout="hideTip(event, '5629', 5629)" onmouseover="showTip(event, '5629', 5629)">
-            x.AllowWriteStreamBuffering()
+            x.AllowReadStreamBuffering()
           </code>
           <div class="tip" id="5629">
             <strong>Signature:</strong> unit -&gt; unit<br />
@@ -337,13 +314,22 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '5630', 5630)" onmouseover="showTip(event, '5630', 5630)">
-            x.BaseAddress()
+            x.AllowWriteStreamBuffering()
           </code>
           <div class="tip" id="5630">
             <strong>Signature:</strong> unit -&gt; unit<br />
-                                  </div>
+                                        <span>
+                    <strong>Attributes:</strong><br />
+[&lt;Obsolete(&quot;This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.&quot;, true)&gt;]<br />
+[&lt;EditorBrowsable(1)&gt;]<br />
+                </span>
+          </div>
         </td>
         <td class="xmldoc">
+            <div class="alert alert-warning">
+                <h5>OBSOLETE</h5>
+                <p>This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.</p>
+            </div> 
                     
         </td>
       </tr>
@@ -351,7 +337,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '5631', 5631)" onmouseover="showTip(event, '5631', 5631)">
-            x.CachePolicy()
+            x.BaseAddress()
           </code>
           <div class="tip" id="5631">
             <strong>Signature:</strong> unit -&gt; unit<br />
@@ -365,7 +351,7 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '5632', 5632)" onmouseover="showTip(event, '5632', 5632)">
-            x.Credentials()
+            x.CachePolicy()
           </code>
           <div class="tip" id="5632">
             <strong>Signature:</strong> unit -&gt; unit<br />
@@ -379,65 +365,9 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '5633', 5633)" onmouseover="showTip(event, '5633', 5633)">
-            x.DownloadDataCompleted
+            x.Credentials()
           </code>
           <div class="tip" id="5633">
-            <strong>Signature:</strong> IEvent&lt;DownloadDataCompletedEventHandler,DownloadDataCompletedEventArgs&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5634', 5634)" onmouseover="showTip(event, '5634', 5634)">
-            x.DownloadFileCompleted
-          </code>
-          <div class="tip" id="5634">
-            <strong>Signature:</strong> IEvent&lt;AsyncCompletedEventHandler,AsyncCompletedEventArgs&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5635', 5635)" onmouseover="showTip(event, '5635', 5635)">
-            x.DownloadProgressChanged
-          </code>
-          <div class="tip" id="5635">
-            <strong>Signature:</strong> IEvent&lt;DownloadProgressChangedEventHandler,DownloadProgressChangedEventArgs&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5636', 5636)" onmouseover="showTip(event, '5636', 5636)">
-            x.DownloadStringCompleted
-          </code>
-          <div class="tip" id="5636">
-            <strong>Signature:</strong> IEvent&lt;DownloadStringCompletedEventHandler,DownloadStringCompletedEventArgs&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5637', 5637)" onmouseover="showTip(event, '5637', 5637)">
-            x.Encoding()
-          </code>
-          <div class="tip" id="5637">
             <strong>Signature:</strong> unit -&gt; unit<br />
                                   </div>
         </td>
@@ -448,8 +378,64 @@
       <tr>
         <td class="member-name">
 
+          <code onmouseout="hideTip(event, '5634', 5634)" onmouseover="showTip(event, '5634', 5634)">
+            x.DownloadDataCompleted
+          </code>
+          <div class="tip" id="5634">
+            <strong>Signature:</strong> IEvent&lt;DownloadDataCompletedEventHandler,DownloadDataCompletedEventArgs&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5635', 5635)" onmouseover="showTip(event, '5635', 5635)">
+            x.DownloadFileCompleted
+          </code>
+          <div class="tip" id="5635">
+            <strong>Signature:</strong> IEvent&lt;AsyncCompletedEventHandler,AsyncCompletedEventArgs&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5636', 5636)" onmouseover="showTip(event, '5636', 5636)">
+            x.DownloadProgressChanged
+          </code>
+          <div class="tip" id="5636">
+            <strong>Signature:</strong> IEvent&lt;DownloadProgressChangedEventHandler,DownloadProgressChangedEventArgs&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5637', 5637)" onmouseover="showTip(event, '5637', 5637)">
+            x.DownloadStringCompleted
+          </code>
+          <div class="tip" id="5637">
+            <strong>Signature:</strong> IEvent&lt;DownloadStringCompletedEventHandler,DownloadStringCompletedEventArgs&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
           <code onmouseout="hideTip(event, '5638', 5638)" onmouseover="showTip(event, '5638', 5638)">
-            x.Headers()
+            x.Encoding()
           </code>
           <div class="tip" id="5638">
             <strong>Signature:</strong> unit -&gt; unit<br />
@@ -463,51 +449,9 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '5639', 5639)" onmouseover="showTip(event, '5639', 5639)">
-            x.IsBusy
+            x.Headers()
           </code>
           <div class="tip" id="5639">
-            <strong>Signature:</strong> bool<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5640', 5640)" onmouseover="showTip(event, '5640', 5640)">
-            x.OpenReadCompleted
-          </code>
-          <div class="tip" id="5640">
-            <strong>Signature:</strong> IEvent&lt;OpenReadCompletedEventHandler,OpenReadCompletedEventArgs&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5641', 5641)" onmouseover="showTip(event, '5641', 5641)">
-            x.OpenWriteCompleted
-          </code>
-          <div class="tip" id="5641">
-            <strong>Signature:</strong> IEvent&lt;OpenWriteCompletedEventHandler,OpenWriteCompletedEventArgs&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5642', 5642)" onmouseover="showTip(event, '5642', 5642)">
-            x.Proxy()
-          </code>
-          <div class="tip" id="5642">
             <strong>Signature:</strong> unit -&gt; unit<br />
                                   </div>
         </td>
@@ -518,8 +462,50 @@
       <tr>
         <td class="member-name">
 
+          <code onmouseout="hideTip(event, '5640', 5640)" onmouseover="showTip(event, '5640', 5640)">
+            x.IsBusy
+          </code>
+          <div class="tip" id="5640">
+            <strong>Signature:</strong> bool<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5641', 5641)" onmouseover="showTip(event, '5641', 5641)">
+            x.OpenReadCompleted
+          </code>
+          <div class="tip" id="5641">
+            <strong>Signature:</strong> IEvent&lt;OpenReadCompletedEventHandler,OpenReadCompletedEventArgs&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5642', 5642)" onmouseover="showTip(event, '5642', 5642)">
+            x.OpenWriteCompleted
+          </code>
+          <div class="tip" id="5642">
+            <strong>Signature:</strong> IEvent&lt;OpenWriteCompletedEventHandler,OpenWriteCompletedEventArgs&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
           <code onmouseout="hideTip(event, '5643', 5643)" onmouseover="showTip(event, '5643', 5643)">
-            x.QueryString()
+            x.Proxy()
           </code>
           <div class="tip" id="5643">
             <strong>Signature:</strong> unit -&gt; unit<br />
@@ -533,93 +519,9 @@
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '5644', 5644)" onmouseover="showTip(event, '5644', 5644)">
-            x.ResponseHeaders
+            x.QueryString()
           </code>
           <div class="tip" id="5644">
-            <strong>Signature:</strong> WebHeaderCollection<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5645', 5645)" onmouseover="showTip(event, '5645', 5645)">
-            x.UploadDataCompleted
-          </code>
-          <div class="tip" id="5645">
-            <strong>Signature:</strong> IEvent&lt;UploadDataCompletedEventHandler,UploadDataCompletedEventArgs&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5646', 5646)" onmouseover="showTip(event, '5646', 5646)">
-            x.UploadFileCompleted
-          </code>
-          <div class="tip" id="5646">
-            <strong>Signature:</strong> IEvent&lt;UploadFileCompletedEventHandler,UploadFileCompletedEventArgs&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5647', 5647)" onmouseover="showTip(event, '5647', 5647)">
-            x.UploadProgressChanged
-          </code>
-          <div class="tip" id="5647">
-            <strong>Signature:</strong> IEvent&lt;UploadProgressChangedEventHandler,UploadProgressChangedEventArgs&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5648', 5648)" onmouseover="showTip(event, '5648', 5648)">
-            x.UploadStringCompleted
-          </code>
-          <div class="tip" id="5648">
-            <strong>Signature:</strong> IEvent&lt;UploadStringCompletedEventHandler,UploadStringCompletedEventArgs&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5649', 5649)" onmouseover="showTip(event, '5649', 5649)">
-            x.UploadValuesCompleted
-          </code>
-          <div class="tip" id="5649">
-            <strong>Signature:</strong> IEvent&lt;UploadValuesCompletedEventHandler,UploadValuesCompletedEventArgs&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                    
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '5650', 5650)" onmouseover="showTip(event, '5650', 5650)">
-            x.UseDefaultCredentials()
-          </code>
-          <div class="tip" id="5650">
             <strong>Signature:</strong> unit -&gt; unit<br />
                                   </div>
         </td>
@@ -630,10 +532,108 @@
       <tr>
         <td class="member-name">
 
+          <code onmouseout="hideTip(event, '5645', 5645)" onmouseover="showTip(event, '5645', 5645)">
+            x.ResponseHeaders
+          </code>
+          <div class="tip" id="5645">
+            <strong>Signature:</strong> WebHeaderCollection<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5646', 5646)" onmouseover="showTip(event, '5646', 5646)">
+            x.UploadDataCompleted
+          </code>
+          <div class="tip" id="5646">
+            <strong>Signature:</strong> IEvent&lt;UploadDataCompletedEventHandler,UploadDataCompletedEventArgs&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5647', 5647)" onmouseover="showTip(event, '5647', 5647)">
+            x.UploadFileCompleted
+          </code>
+          <div class="tip" id="5647">
+            <strong>Signature:</strong> IEvent&lt;UploadFileCompletedEventHandler,UploadFileCompletedEventArgs&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5648', 5648)" onmouseover="showTip(event, '5648', 5648)">
+            x.UploadProgressChanged
+          </code>
+          <div class="tip" id="5648">
+            <strong>Signature:</strong> IEvent&lt;UploadProgressChangedEventHandler,UploadProgressChangedEventArgs&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5649', 5649)" onmouseover="showTip(event, '5649', 5649)">
+            x.UploadStringCompleted
+          </code>
+          <div class="tip" id="5649">
+            <strong>Signature:</strong> IEvent&lt;UploadStringCompletedEventHandler,UploadStringCompletedEventArgs&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5650', 5650)" onmouseover="showTip(event, '5650', 5650)">
+            x.UploadValuesCompleted
+          </code>
+          <div class="tip" id="5650">
+            <strong>Signature:</strong> IEvent&lt;UploadValuesCompletedEventHandler,UploadValuesCompletedEventArgs&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
           <code onmouseout="hideTip(event, '5651', 5651)" onmouseover="showTip(event, '5651', 5651)">
-            x.WriteStreamClosed
+            x.UseDefaultCredentials()
           </code>
           <div class="tip" id="5651">
+            <strong>Signature:</strong> unit -&gt; unit<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                    
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5652', 5652)" onmouseover="showTip(event, '5652', 5652)">
+            x.WriteStreamClosed
+          </code>
+          <div class="tip" id="5652">
             <strong>Signature:</strong> IEvent&lt;WriteStreamClosedEventHandler,WriteStreamClosedEventArgs&gt;<br />
                                         <span>
                     <strong>Attributes:</strong><br />
@@ -757,7 +757,7 @@
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.1</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.2</a></li>
 									</ul>
 								</div>
 							</div>

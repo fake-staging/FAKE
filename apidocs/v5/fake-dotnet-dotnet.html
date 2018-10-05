@@ -521,7 +521,7 @@
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L1238-1238" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L1263-1263" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -717,7 +717,7 @@ This file can exist in the working directory or any of the parent directories</p
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L906-906" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L919-919" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -779,7 +779,7 @@ This file can exist in the working directory or any of the parent directories</p
 <div class="tip" id="fs9">val setParams : defaults:DotNet.MSBuildOptions -&gt; DotNet.MSBuildOptions</div>
 <div class="tip" id="fs10">val defaults : DotNet.MSBuildOptions</div>
 <div class="tip" id="fs11">module DotNet<br /><br />from Fake.DotNet</div>
-<div class="tip" id="fs12">type MSBuildOptions =<br />&#160;&#160;{Common: Options;<br />&#160;&#160;&#160;MSBuildParams: CliArguments;}<br />&#160;&#160;&#160;&#160;member WithCommon : f:(Options -&gt; Options) -&gt; MSBuildOptions<br />&#160;&#160;&#160;&#160;member WithEnvironment : map:Map&lt;string,string&gt; -&gt; MSBuildOptions<br />&#160;&#160;&#160;&#160;member WithRedirectOutput : shouldRedirect:bool -&gt; MSBuildOptions<br />&#160;&#160;&#160;&#160;member Environment : Map&lt;string,string&gt;<br />&#160;&#160;&#160;&#160;static member Create : unit -&gt; MSBuildOptions</div>
+<div class="tip" id="fs12">type MSBuildOptions =<br />&#160;&#160;{Common: Options;<br />&#160;&#160;&#160;MSBuildParams: CliArguments;}<br />&#160;&#160;&#160;&#160;member WithCommon : f:(Options -&gt; Options) -&gt; MSBuildOptions<br />&#160;&#160;&#160;&#160;member WithEnvironment : map:Map&lt;string,string&gt; -&gt; MSBuildOptions<br />&#160;&#160;&#160;&#160;member WithMSBuildParams : f:(CliArguments -&gt; CliArguments) -&gt; MSBuildOptions<br />&#160;&#160;&#160;&#160;member WithRedirectOutput : shouldRedirect:bool -&gt; MSBuildOptions<br />&#160;&#160;&#160;&#160;member Environment : Map&lt;string,string&gt;<br />&#160;&#160;&#160;&#160;static member Create : unit -&gt; MSBuildOptions</div>
 <div class="tip" id="fs13">type MSBuildParams =<br />&#160;&#160;{ToolPath: string;<br />&#160;&#160;&#160;WorkingDirectory: string;<br />&#160;&#160;&#160;Targets: string list;<br />&#160;&#160;&#160;Properties: (string * string) list;<br />&#160;&#160;&#160;MaxCpuCount: int option option;<br />&#160;&#160;&#160;DoRestore: bool;<br />&#160;&#160;&#160;NoLogo: bool;<br />&#160;&#160;&#160;NodeReuse: bool;<br />&#160;&#160;&#160;RestorePackagesFlag: bool;<br />&#160;&#160;&#160;ToolsVersion: string option;<br />&#160;&#160;&#160;...}<br />&#160;&#160;&#160;&#160;member WithEnvironment : map:Map&lt;string,string&gt; -&gt; MSBuildParams<br />&#160;&#160;&#160;&#160;static member Create : unit -&gt; MSBuildParams</div>
 <div class="tip" id="fs14">DotNet.MSBuildOptions.MSBuildParams: MSBuild.CliArguments</div>
 <div class="tip" id="fs15">val msbuild : setParams:(DotNet.MSBuildOptions -&gt; DotNet.MSBuildOptions) -&gt; project:string -&gt; unit</div>
@@ -798,7 +798,7 @@ This file can exist in the working directory or any of the parent directories</p
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L1087-1087" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L1112-1112" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -851,7 +851,7 @@ This file can exist in the working directory or any of the parent directories</p
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L1164-1164" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L1189-1189" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -1088,7 +1088,7 @@ This file can exist in the working directory or any of the parent directories</p
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L986-986" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L1011-1011" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -1113,7 +1113,7 @@ This file can exist in the working directory or any of the parent directories</p
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L1347-1347" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L1372-1372" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
@@ -1234,7 +1234,7 @@ This file can exist in the working directory or any of the parent directories</p
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.1</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.2</a></li>
 									</ul>
 								</div>
 							</div>
