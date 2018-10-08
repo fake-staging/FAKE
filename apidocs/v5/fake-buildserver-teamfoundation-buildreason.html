@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>BuildParameters - FAKE - F# Make</title>
+		<title>BuildReason - FAKE - F# Make</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Steffen Forkmann, Mauricio Scheffer, Colin Bull, Matthias Dittrich" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -263,13 +263,18 @@
 						<div class="inner">
 							<div class="container">
 								<div id="content">
-                                    <p>
-                                        <strong>Note: This is the migration API reference for FAKE 5. The new (modularized) API documentation can be found 
-                                            <a href="/apidocs/v5/index.html">here</a>.
-                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-buildserver-teamcity-buildparameters.html">here if exists in a module</a>.
-                                            More information regarding the migration can be found <a href="/fake-migrate-to-fake-5.html">here</a>
-                                        </strong>
-                                    </p>
+                                            <div class="alert alert-info">
+                                                <h5>INFO</h5>
+                                                <p>This API documentation is for FAKE version 5.0 or later. The old API documentation can be found
+                                                    <a href="/apidocs/v5/legacy/index.html">here for migration</a> or <a href="/apidocs/v4/index.html">here for fake 4</a>
+                                                </p>
+                                                <p>
+                                                    This is part of the <a href="https://www.nuget.org/packages/Fake.BuildServer.TeamFoundation" >Fake.BuildServer.TeamFoundation</a> module.
+                                                </p>
+                                            </div> 
+                                
+                                   
+                                    
 									<!-- Content -->
                       <article>
           			
@@ -278,97 +283,175 @@
 <p>
 
 </p>
-<a name="BuildParameters" class="anchor" href="#BuildParameters" ><h1>BuildParameters</h1></a>
+<a name="BuildReason" class="anchor" href="#BuildReason" ><h1>BuildReason</h1></a>
 <div class="xmldoc">
-<p>TeamCity build parameters</p>
-<p>See <a href="https://confluence.jetbrains.com/display/TCD18/Predefined+Build+Parameters">Predefined Build Parameters documentation</a> for more information</p>
-
 </div>
-  <a name="Static members" class="anchor" href="#Static members"><h3>Static members</h3></a>
+  <a name="Union Cases" class="anchor" href="#Union Cases"><h3>Union Cases</h3></a>
   <table class="table table-bordered member-list">
     <thead>
-      <tr><td>Static member</td><td>Description</td></tr>
+      <tr><td>Union Case</td><td>Description</td></tr>
     </thead>
     <tbody>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '4488', 4488)" onmouseover="showTip(event, '4488', 4488)">
-            BuildParameters.All
+          <code onmouseout="hideTip(event, '1430', 1430)" onmouseover="showTip(event, '1430', 1430)">
+            BatchedCI
           </code>
-          <div class="tip" id="4488">
-            <strong>Signature:</strong> Map&lt;string,string&gt;<br />
+          <div class="tip" id="1430">
+            <strong>Signature:</strong> <br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamCity/TeamCity.fs#L254-254" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamFoundation/TeamFoundation.fs#L153-153" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          <p>Get all build parameters</p>
-<p>System ones are prefixed with 'system.', runner ones with 'runner.' and environment variables with 'env.'</p>
-
-
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '4489', 4489)" onmouseover="showTip(event, '4489', 4489)">
-            BuildParameters.Configuration
+          <code onmouseout="hideTip(event, '1431', 1431)" onmouseover="showTip(event, '1431', 1431)">
+            BuildCompletion
           </code>
-          <div class="tip" id="4489">
-            <strong>Signature:</strong> Map&lt;string,string&gt;<br />
+          <div class="tip" id="1431">
+            <strong>Signature:</strong> <br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamCity/TeamCity.fs#L244-244" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamFoundation/TeamFoundation.fs#L158-158" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          <p>Get all configuration build parameters</p>
-
-
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '4490', 4490)" onmouseover="showTip(event, '4490', 4490)">
-            BuildParameters.Runner
+          <code onmouseout="hideTip(event, '1432', 1432)" onmouseover="showTip(event, '1432', 1432)">
+            CheckInShelvset
           </code>
-          <div class="tip" id="4490">
-            <strong>Signature:</strong> Map&lt;string,string&gt;<br />
+          <div class="tip" id="1432">
+            <strong>Signature:</strong> <br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamCity/TeamCity.fs#L248-248" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamFoundation/TeamFoundation.fs#L156-156" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          <p>Get all runner build parameters</p>
-
-
+          
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '4491', 4491)" onmouseover="showTip(event, '4491', 4491)">
-            BuildParameters.System
+          <code onmouseout="hideTip(event, '1433', 1433)" onmouseover="showTip(event, '1433', 1433)">
+            IndividualCI
           </code>
-          <div class="tip" id="4491">
-            <strong>Signature:</strong> Map&lt;string,string&gt;<br />
+          <div class="tip" id="1433">
+            <strong>Signature:</strong> <br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamCity/TeamCity.fs#L240-240" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamFoundation/TeamFoundation.fs#L152-152" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          <p>Get all system build parameters (Without the 'system.' prefix)</p>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
 
+          <code onmouseout="hideTip(event, '1434', 1434)" onmouseover="showTip(event, '1434', 1434)">
+            Manual
+          </code>
+          <div class="tip" id="1434">
+            <strong>Signature:</strong> <br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamFoundation/TeamFoundation.fs#L151-151" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
 
+          <code onmouseout="hideTip(event, '1435', 1435)" onmouseover="showTip(event, '1435', 1435)">
+            Other(string)
+          </code>
+          <div class="tip" id="1435">
+            <strong>Signature:</strong> string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamFoundation/TeamFoundation.fs#L159-159" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1436', 1436)" onmouseover="showTip(event, '1436', 1436)">
+            PullRequest
+          </code>
+          <div class="tip" id="1436">
+            <strong>Signature:</strong> <br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamFoundation/TeamFoundation.fs#L157-157" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1437', 1437)" onmouseover="showTip(event, '1437', 1437)">
+            Schedule
+          </code>
+          <div class="tip" id="1437">
+            <strong>Signature:</strong> <br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamFoundation/TeamFoundation.fs#L154-154" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1438', 1438)" onmouseover="showTip(event, '1438', 1438)">
+            ValidateShelveset
+          </code>
+          <div class="tip" id="1438">
+            <strong>Signature:</strong> <br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamFoundation/TeamFoundation.fs#L155-155" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
     </tbody>
@@ -478,7 +561,7 @@
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.4</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.5-alpha.571</a></li>
 									</ul>
 								</div>
 							</div>
