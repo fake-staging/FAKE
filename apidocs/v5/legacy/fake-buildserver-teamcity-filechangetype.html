@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>MSBuildLogger - FAKE - F# Make</title>
+		<title>FileChangeType - FAKE - F# Make</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Steffen Forkmann, Mauricio Scheffer, Colin Bull, Matthias Dittrich" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -266,7 +266,7 @@
                                     <p>
                                         <strong>Note: This is the migration API reference for FAKE 5. The new (modularized) API documentation can be found 
                                             <a href="/apidocs/v5/index.html">here</a>.
-                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-dotnet-msbuildlogger.html">here if exists in a module</a>.
+                                            If the API is already migrated you can check <a href="/apidocs/v5/fake-buildserver-teamcity-filechangetype.html">here if exists in a module</a>.
                                             More information regarding the migration can be found <a href="/fake-migrate-to-fake-5.html">here</a>
                                         </strong>
                                     </p>
@@ -278,70 +278,141 @@
 <p>
 
 </p>
-<a name="MSBuildLogger" class="anchor" href="#MSBuildLogger"><h1>MSBuildLogger</h1></a>
-
+<a name="FileChangeType" class="anchor" href="#FileChangeType" ><h1>FileChangeType</h1></a>
 <div class="xmldoc">
-<p>Contains Logger implementations for MSBuild.</p>
+<p>The type of change that occured</p>
 
 </div>
-
-<!-- Render nested types and modules, if there are any -->
-  <h2>Nested types and modules</h2>
-  <div>
-      <table class="table table-bordered type-list">
-    <thead>
-      <tr><td>Type</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td class="type-name">
-            <a href="fake-dotnet-msbuildlogger-errorlogger.html">ErrorLogger</a>
-          </td>
-          <td class="xmldoc">
-            <p>TeamCity Logger for MSBuild</p>
-
-
-          </td>
-        </tr>
-        <tr>
-          <td class="type-name">
-            <a href="fake-dotnet-msbuildlogger-msbuildlogger.html">MSBuildLogger</a>
-          </td>
-          <td class="xmldoc">
-            <p>Abstract MSBuild Logger class.</p>
-
-
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-  </div>
-
-  <a name="Functions and values" class="anchor" href="#Functions and values"><h3>Functions and values</h3></a>
+  <a name="Union Cases" class="anchor" href="#Union Cases"><h3>Union Cases</h3></a>
   <table class="table table-bordered member-list">
     <thead>
-      <tr><td>Function or value</td><td>Description</td></tr>
+      <tr><td>Union Case</td><td>Description</td></tr>
     </thead>
     <tbody>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1676', 1676)" onmouseover="showTip(event, '1676', 1676)">
-            ErrorLoggerFile
+          <code onmouseout="hideTip(event, '4506', 4506)" onmouseover="showTip(event, '4506', 4506)">
+            DirectoryAdded
           </code>
-          <div class="tip" id="1676">
-            <strong>Signature:</strong> string<br />
+          <div class="tip" id="4506">
+            <strong>Signature:</strong> <br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.MSBuild/MSBuildLogger.fs#L46-46" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamCity/TeamCity.fs#L264-264" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          <p>The ErrorLogFile</p>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
 
+          <code onmouseout="hideTip(event, '4507', 4507)" onmouseover="showTip(event, '4507', 4507)">
+            DirectoryChanged
+          </code>
+          <div class="tip" id="4507">
+            <strong>Signature:</strong> <br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamCity/TeamCity.fs#L263-263" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
 
+          <code onmouseout="hideTip(event, '4508', 4508)" onmouseover="showTip(event, '4508', 4508)">
+            DirectoryRemoved
+          </code>
+          <div class="tip" id="4508">
+            <strong>Signature:</strong> <br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamCity/TeamCity.fs#L265-265" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '4509', 4509)" onmouseover="showTip(event, '4509', 4509)">
+            FileAdded
+          </code>
+          <div class="tip" id="4509">
+            <strong>Signature:</strong> <br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamCity/TeamCity.fs#L260-260" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '4510', 4510)" onmouseover="showTip(event, '4510', 4510)">
+            FileChanged
+          </code>
+          <div class="tip" id="4510">
+            <strong>Signature:</strong> <br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamCity/TeamCity.fs#L259-259" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '4511', 4511)" onmouseover="showTip(event, '4511', 4511)">
+            FileNotChanged
+          </code>
+          <div class="tip" id="4511">
+            <strong>Signature:</strong> <br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamCity/TeamCity.fs#L262-262" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '4512', 4512)" onmouseover="showTip(event, '4512', 4512)">
+            FileRemoved
+          </code>
+          <div class="tip" id="4512">
+            <strong>Signature:</strong> <br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.BuildServer.TeamCity/TeamCity.fs#L261-261" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          
         </td>
       </tr>
     </tbody>
@@ -451,7 +522,7 @@
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.5-alpha.573</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.8.5-alpha.574</a></li>
 									</ul>
 								</div>
 							</div>
