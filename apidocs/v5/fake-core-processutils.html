@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>ResultGenerator<'TRes> - FAKE - F# Make</title>
+		<title>ProcessUtils - FAKE - F# Make</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Steffen Forkmann, Mauricio Scheffer, Colin Bull, Matthias Dittrich" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -283,49 +283,83 @@
 <p>
 
 </p>
-<a name="ResultGenerator<'TRes>" class="anchor" href="#ResultGenerator<'TRes>" ><h1>ResultGenerator<'TRes></h1></a>
+<a name="ProcessUtils" class="anchor" href="#ProcessUtils"><h1>ProcessUtils</h1></a>
+
 <div class="xmldoc">
 </div>
-  <a name="Record Fields" class="anchor" href="#Record Fields"><h3>Record Fields</h3></a>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <a name="Functions and values" class="anchor" href="#Functions and values"><h3>Functions and values</h3></a>
   <table class="table table-bordered member-list">
     <thead>
-      <tr><td>Record Field</td><td>Description</td></tr>
+      <tr><td>Function or value</td><td>Description</td></tr>
     </thead>
     <tbody>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1631', 1631)" onmouseover="showTip(event, '1631', 1631)">
-            GetRawOutput
+          <code onmouseout="hideTip(event, '297', 297)" onmouseover="showTip(event, '297', 297)">
+            ProcessUtils.findFilesOnPath(file)
           </code>
-          <div class="tip" id="1631">
-            <strong>Signature:</strong> unit -&gt; ProcessOutput<br />
+          <div class="tip" id="297">
+            <strong>Signature:</strong> file:string -&gt; seq&lt;string&gt;<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/Proc.fs#L96-96" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/ProcessUtils.fs#L48-48" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Searches in PATH for the given file and returnes the result ordered by precendence</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1632', 1632)" onmouseover="showTip(event, '1632', 1632)">
-            GetResult
+          <code onmouseout="hideTip(event, '298', 298)" onmouseover="showTip(event, '298', 298)">
+            ProcessUtils.tryFindFileOnPath(file)
           </code>
-          <div class="tip" id="1632">
-            <strong>Signature:</strong> ProcessOutput -&gt; &#39;TRes<br />
+          <div class="tip" id="298">
+            <strong>Signature:</strong> file:string -&gt; string option<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/Proc.fs#L97-97" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/ProcessUtils.fs#L68-68" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Searches the current directory and the directories within the PATH
+environment variable for the given file. If successful returns the full
+path to the file.</p>
+<h2>Parameters</h2>
+<ul>
+<li><code>file</code> - The file to locate</li>
+</ul>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '299', 299)" onmouseover="showTip(event, '299', 299)">
+            ProcessUtils.tryFindTool envVar tool
+          </code>
+          <div class="tip" id="299">
+            <strong>Signature:</strong> envVar:string -&gt; tool:string -&gt; string option<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/ProcessUtils.fs#L73-73" class="github-link">
+              <img src="/assets/img/github.png" class="normal" />
+              <img src="/assets/img/github-blue.png" class="hover" />
+            </a>
+          <p>Tries to find the tool via Env-Var. If no path has the right tool we are trying the PATH system variable.</p>
+
+
         </td>
       </tr>
     </tbody>

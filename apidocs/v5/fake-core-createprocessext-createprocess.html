@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>IProcessHook - FAKE - F# Make</title>
+		<title>CreateProcess - FAKE - F# Make</title>
 		<meta charset="utf-8" />
 		<meta name="author" content="Steffen Forkmann, Mauricio Scheffer, Colin Bull, Matthias Dittrich" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -283,51 +283,37 @@
 <p>
 
 </p>
-<a name="IProcessHook" class="anchor" href="#IProcessHook" ><h1>IProcessHook</h1></a>
+<a name="CreateProcess" class="anchor" href="#CreateProcess"><h1>CreateProcess</h1></a>
+
 <div class="xmldoc">
 </div>
-  <a name="Instance members" class="anchor" href="#Instance members"><h3>Instance members</h3></a>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <a name="Functions and values" class="anchor" href="#Functions and values"><h3>Functions and values</h3></a>
   <table class="table table-bordered member-list">
     <thead>
-      <tr><td>Instance member</td><td>Description</td></tr>
+      <tr><td>Function or value</td><td>Description</td></tr>
     </thead>
     <tbody>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1585', 1585)" onmouseover="showTip(event, '1585', 1585)">
-            x.ParseSuccess(arg1)
+          <code onmouseout="hideTip(event, '205', 205)" onmouseover="showTip(event, '205', 205)">
+            withFramework(c)
           </code>
-          <div class="tip" id="1585">
-            <strong>Signature:</strong> int -&gt; unit<br />
-              <strong>Modifiers:</strong> abstract<br />
-                                  </div>
+          <div class="tip" id="205">
+            <strong>Signature:</strong> c:CreateProcess&lt;&#39;?8642&gt; -&gt; CreateProcess&lt;&#39;?8642&gt;<br />
+                          <strong>Type parameters:</strong> '?8642                      </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/Proc.fs#L94-94" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/CreateProcessExt.fs#L7-7" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
+          <p>Ensures the executable is run with the full framework. On non-windows platforms that means running the tool by invoking 'mono'.</p>
 
-          <code onmouseout="hideTip(event, '1586', 1586)" onmouseover="showTip(event, '1586', 1586)">
-            x.ProcessExited(arg1)
-          </code>
-          <div class="tip" id="1586">
-            <strong>Signature:</strong> int -&gt; unit<br />
-              <strong>Modifiers:</strong> abstract<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/Proc.fs#L93-93" class="github-link">
-              <img src="/assets/img/github.png" class="normal" />
-              <img src="/assets/img/github-blue.png" class="hover" />
-            </a>
-          
+
         </td>
       </tr>
     </tbody>

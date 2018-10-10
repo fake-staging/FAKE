@@ -631,6 +631,16 @@ If some integration is not working as expected or you have features you would li
             <a href="fake-core-arguments.html">Arguments</a>
           </td>
           <td class="xmldoc">
+            <p>Represents a list of arguments</p>
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="fake-core-asyncprocessresult-1.html">AsyncProcessResult<'a></a>
+          </td>
+          <td class="xmldoc">
             
           </td>
         </tr>
@@ -639,7 +649,9 @@ If some integration is not working as expected or you have features you would li
             <a href="fake-core-command.html">Command</a>
           </td>
           <td class="xmldoc">
-            
+            <p>The type of command to execute</p>
+
+
           </td>
         </tr>
         <tr>
@@ -657,12 +669,25 @@ If some integration is not working as expected or you have features you would li
             <a href="fake-core-createprocess-1.html">CreateProcess<'TRes></a>
           </td>
           <td class="xmldoc">
-            
+            <p>Handle for creating a process and returning potential results.</p>
+
+
           </td>
         </tr>
         <tr>
           <td class="type-name">
             <a href="fake-core-dataref-1.html">DataRef<'T></a>
+          </td>
+          <td class="xmldoc">
+            <p>Represents basically an "out" parameter, allows to retrieve a value after a certain point in time.
+Used to retrieve "pipes"</p>
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="fake-core-envmap.html">EnvMap</a>
           </td>
           <td class="xmldoc">
             
@@ -688,15 +713,7 @@ If some integration is not working as expected or you have features you would li
         </tr>
         <tr>
           <td class="type-name">
-            <a href="fake-core-iprocesshook.html">IProcessHook</a>
-          </td>
-          <td class="xmldoc">
-            
-          </td>
-        </tr>
-        <tr>
-          <td class="type-name">
-            <a href="fake-core-iprocessstarter.html">IProcessStarter</a>
+            <a href="fake-core-imap-2.html">IMap<'TKey, 'TValue></a>
           </td>
           <td class="xmldoc">
             
@@ -715,7 +732,9 @@ If some integration is not working as expected or you have features you would li
             <a href="fake-core-processoutput.html">ProcessOutput</a>
           </td>
           <td class="xmldoc">
-            
+            <p>The output of the process. If ordering between stdout and stderr is important you need to use streams.</p>
+
+
           </td>
         </tr>
         <tr>
@@ -730,7 +749,7 @@ If some integration is not working as expected or you have features you would li
         </tr>
         <tr>
           <td class="type-name">
-            <a href="fake-core-processresults-1.html">ProcessResults<'a></a>
+            <a href="fake-core-processresult-1.html">ProcessResult<'a></a>
           </td>
           <td class="xmldoc">
             
@@ -738,15 +757,7 @@ If some integration is not working as expected or you have features you would li
         </tr>
         <tr>
           <td class="type-name">
-            <a href="fake-core-rawcreateprocess.html">RawCreateProcess</a>
-          </td>
-          <td class="xmldoc">
-            
-          </td>
-        </tr>
-        <tr>
-          <td class="type-name">
-            <a href="fake-core-resultgenerator-1.html">ResultGenerator<'TRes></a>
+            <a href="fake-core-rawprocessresult.html">RawProcessResult</a>
           </td>
           <td class="xmldoc">
             
@@ -775,7 +786,9 @@ If some integration is not working as expected or you have features you would li
             <a href="fake-core-streamspecification.html">StreamSpecification</a>
           </td>
           <td class="xmldoc">
-            
+            <p>Various options to redirect streams.</p>
+
+
           </td>
         </tr>
         <tr>
@@ -1041,12 +1054,48 @@ This allows us to run some modules without any context and change behavior depen
             <a href="fake-core-args.html">Args</a>
           </td>
           <td class="xmldoc">
+          <p>Helper functions for proper command line parsing</p>
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="fake-core-argumentsmodule.html">Arguments</a>
+          </td>
+          <td class="xmldoc">
           
           </td>
         </tr>
         <tr>
           <td class="module-name">
             <a href="fake-core-createprocess.html">CreateProcess</a>
+          </td>
+          <td class="xmldoc">
+          <p>Module for creating and modifying CreateProcess<'TRes> instances</p>
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="fake-core-createprocessext.html">CreateProcessExt</a>
+          </td>
+          <td class="xmldoc">
+          
+          </td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="fake-core-envmapmodule.html">EnvMap</a>
+          </td>
+          <td class="xmldoc">
+          
+          </td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="fake-core-imap.html">IMap</a>
           </td>
           <td class="xmldoc">
           
@@ -1086,7 +1135,7 @@ This allows us to run some modules without any context and change behavior depen
         </tr>
         <tr>
           <td class="module-name">
-            <a href="fake-core-rawproc.html">RawProc</a>
+            <a href="fake-core-processutils.html">ProcessUtils</a>
           </td>
           <td class="xmldoc">
           

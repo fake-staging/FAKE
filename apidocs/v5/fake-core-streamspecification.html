@@ -285,6 +285,8 @@
 </p>
 <a name="StreamSpecification" class="anchor" href="#StreamSpecification" ><h1>StreamSpecification</h1></a>
 <div class="xmldoc">
+<p>Various options to redirect streams.</p>
+
 </div>
   <a name="Union Cases" class="anchor" href="#Union Cases"><h3>Union Cases</h3></a>
   <table class="table table-bordered member-list">
@@ -295,55 +297,61 @@
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1637', 1637)" onmouseover="showTip(event, '1637', 1637)">
+          <code onmouseout="hideTip(event, '1647', 1647)" onmouseover="showTip(event, '1647', 1647)">
             CreatePipe(StreamRef)
           </code>
-          <div class="tip" id="1637">
+          <div class="tip" id="1647">
             <strong>Signature:</strong> StreamRef<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/RawProc.fs#L27-27" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/RawProc.fs#L75-75" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Retrieve the raw pipe from the process (the StreamRef is set with a stream you can write into for 'stdin' and read from for 'stdout' and 'stderr')</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1638', 1638)" onmouseover="showTip(event, '1638', 1638)">
+          <code onmouseout="hideTip(event, '1648', 1648)" onmouseover="showTip(event, '1648', 1648)">
             Inherit
           </code>
-          <div class="tip" id="1638">
+          <div class="tip" id="1648">
             <strong>Signature:</strong> <br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/RawProc.fs#L25-25" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/RawProc.fs#L71-71" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Do not redirect, or use normal process inheritance</p>
+
+
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1639', 1639)" onmouseover="showTip(event, '1639', 1639)">
+          <code onmouseout="hideTip(event, '1649', 1649)" onmouseover="showTip(event, '1649', 1649)">
             UseStream(closeOnExit,stream)
           </code>
-          <div class="tip" id="1639">
+          <div class="tip" id="1649">
             <strong>Signature:</strong> bool * Stream<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/RawProc.fs#L26-26" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.Core.Process/RawProc.fs#L73-73" class="github-link">
               <img src="/assets/img/github.png" class="normal" />
               <img src="/assets/img/github-blue.png" class="hover" />
             </a>
-          
+          <p>Redirect to the given stream (the stream is provided by the user and is written only for 'stdout' &amp; 'stderr' and read only for 'stdin')</p>
+
+
         </td>
       </tr>
     </tbody>
