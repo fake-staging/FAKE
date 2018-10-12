@@ -463,6 +463,32 @@ For example if you want that the user continuously "sees" the output as the proc
 </code></pre></td>
 </tr>
 </table>
+<h2><a name="Advanced-usage-scenarios" class="anchor" href="#Advanced-usage-scenarios">Advanced usage scenarios</a></h2>
+<p>Redirect output from one process <code>outgen.exe</code> to <code>processIn.exe</code>:</p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
+<span class="l"> 2: </span>
+<span class="l"> 3: </span>
+<span class="l"> 4: </span>
+<span class="l"> 5: </span>
+<span class="l"> 6: </span>
+<span class="l"> 7: </span>
+<span class="l"> 8: </span>
+<span class="l"> 9: </span>
+<span class="l">10: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs12', 28)" onmouseover="showTip(event, 'fs12', 28)" class="id">input</span> <span class="o">=</span> <span class="id">StreamRef</span><span class="pn">.</span><span class="id">Empty</span>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs13', 29)" onmouseover="showTip(event, 'fs13', 29)" class="id">p1</span> <span class="o">=</span>
+    <span class="id">CreateProcess</span><span class="pn">.</span><span class="id">fromRawCommand</span> <span class="s">&quot;processIn.exe&quot;</span> <span class="pn">[</span><span class="pn">]</span>
+    <span class="o">|&gt;</span> <span class="id">CreateProcess</span><span class="pn">.</span><span class="id">withStandardInput</span> <span class="pn">(</span><span class="id">CreatePipe</span> <span onmouseout="hideTip(event, 'fs12', 30)" onmouseover="showTip(event, 'fs12', 30)" class="id">input</span><span class="pn">)</span>
+    <span class="o">|&gt;</span> <span class="id">Proc</span><span class="pn">.</span><span class="id">start</span>
+
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs14', 31)" onmouseover="showTip(event, 'fs14', 31)" class="id">p2</span> <span class="o">=</span>
+    <span class="id">CreateProcess</span><span class="pn">.</span><span class="id">fromRawCommand</span> <span class="s">&quot;outgen.exe&quot;</span> <span class="pn">[</span><span class="pn">]</span>
+    <span class="o">|&gt;</span> <span class="id">CreateProcess</span><span class="pn">.</span><span class="id">withStandardOutput</span> <span class="pn">(</span><span class="id">UseStream</span><span class="pn">(</span><span class="k">false</span><span class="pn">,</span> <span onmouseout="hideTip(event, 'fs12', 32)" onmouseover="showTip(event, 'fs12', 32)" class="id">input</span><span class="pn">.</span><span class="id">Value</span><span class="pn">)</span><span class="pn">)</span>
+    <span class="o">|&gt;</span> <span class="id">Proc</span><span class="pn">.</span><span class="id">run</span>
+</code></pre></td>
+</tr>
+</table>
 
 <div class="tip" id="fs1">val ignore : value:&#39;T -&gt; unit</div>
 <div class="tip" id="fs2">val result : obj</div>
@@ -475,6 +501,9 @@ For example if you want that the user continuously "sees" the output as the proc
 <div class="tip" id="fs9">val r : &#39;a</div>
 <div class="tip" id="fs10">val startProcess : (unit -&gt; &#39;b)</div>
 <div class="tip" id="fs11">val myOutput : MySafeOutput</div>
+<div class="tip" id="fs12">val input : obj</div>
+<div class="tip" id="fs13">val p1 : obj</div>
+<div class="tip" id="fs14">val p2 : obj</div>
 
                       </article>
 								</div>
@@ -580,7 +609,7 @@ For example if you want that the user continuously "sees" the output as the proc
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.9.0-alpha.680</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.9.0-alpha.681</a></li>
 									</ul>
 								</div>
 							</div>
