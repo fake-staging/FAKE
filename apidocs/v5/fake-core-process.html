@@ -667,7 +667,7 @@ sure that none of them depend on the output of another.</p>
 <li>
 <p><code>timeOut</code> - The timeout for the process.</p>
 <h2>Sample</h2>
-<p>let result = ExecProcess (fun info -&gt;<br />
+<p>let result = Process.execSimple (fun info -&gt;<br />
 info.FileName &lt;- "c:/MyProc.exe"
 info.WorkingDirectory &lt;- "c:/workingDirectory"
 info.Arguments &lt;- "-v") (TimeSpan.FromMinutes 5.0)</p>
@@ -1665,7 +1665,7 @@ Existing values will be overriden.</p>
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.9.0-alpha.685</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.9.0-alpha.686</a></li>
 									</ul>
 								</div>
 							</div>
