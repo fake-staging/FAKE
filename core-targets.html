@@ -426,7 +426,7 @@ or <code>fake build --list</code> to list your targets.</p>
 </ul>
 <p>You can access the arguments from every target executed along the way.</p>
 <h2><a name="Setting-build-status" class="anchor" href="#Setting-build-status">Setting build status</a></h2>
-<p>You can set the build status automatically using <code>Target.updateBuildStatus</code></p>
+<p>You can set the build status automatically using <code>Target.updateBuildStatus</code>. To do this you need to use the <code>Target.WithContext</code> functions to run a target and retrieve the context information:</p>
 <p>Example:</p>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
 <span class="l"> 2: </span>
@@ -484,9 +484,9 @@ or <code>fake build --list</code> to list your targets.</p>
     <span class="o">==&gt;</span> <span class="s">&quot;Deploy&quot;</span>
 
 <span class="c">// *** Start Build ***</span>
-<span class="k">let</span> <span class="id">ctx</span> <span class="o">=</span> <span class="id">Target</span><span class="pn">.</span><span class="id">runOrDefaultAndGetContext</span> <span class="s">&quot;Deploy&quot;</span>  <span class="c">//Could also use: Target.runAndGetOptionalContext &quot;Deploy&quot;</span>
+<span class="k">let</span> <span class="id">ctx</span> <span class="o">=</span> <span class="id">Target</span><span class="pn">.</span><span class="id">WithContext</span><span class="pn">.</span><span class="id">runOrDefault</span> <span class="s">&quot;Deploy&quot;</span>
 <span class="id">Target</span><span class="pn">.</span><span class="id">updateBuildStatus</span> <span class="id">ctx</span>
-<span class="id">Target</span><span class="pn">.</span><span class="id">raiseIfError</span> <span class="id">ctx</span>
+<span class="id">Target</span><span class="pn">.</span><span class="id">raiseIfError</span> <span class="id">ctx</span> <span class="c">// important to have proper exit code on build failures.</span>
 </code></pre></td>
 </tr>
 </table>
@@ -753,7 +753,7 @@ say that target B has a soft dependency on target A:</p>
 									<ul class="menu">
 										<li>&copy; FAKE. All rights reserved</li>
 										<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.9.0-alpha.696</a></li>
+										<li>Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.9.0-alpha.697</a></li>
 									</ul>
 								</div>
 							</div>
