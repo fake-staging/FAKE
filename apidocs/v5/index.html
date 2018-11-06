@@ -136,6 +136,7 @@
 								<a href="/dotnet-assemblyinfo.html" class="navbar-item">AssemblyInfoFile</a>
 								<a href="/apidocs/v5/fake-dotnet-fsc.html" class="navbar-item">Fsc</a>
 								<a href="/apidocs/v5/fake-dotnet-fsi.html" class="navbar-item">Fsi</a>
+								<a href="/apidocs/v5/fake-dotnet-fxcop.html" class="navbar-item">FxCop</a>
 								<a href="/apidocs/v5/fake-dotnet-msbuild.html" class="navbar-item">MSBuild</a>
 								<a href="/apidocs/v5/fake-dotnet-testing-nunit3.html" class="navbar-item">Testing -
 									NUnit</a>
@@ -1807,6 +1808,45 @@ See <a href="https://docs.microsoft.com/de-de/visualstudio/msbuild/msbuild-comma
         </tr>
         <tr>
           <td class="module-name">
+            <a href="fake-dotnet-fxcop.html">FxCop</a>
+          </td>
+          <td class="xmldoc">
+          <p>Contains a task to invoke the FxCop tool</p>
+<h3>Sample</h3>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
+<span class="l"> 2: </span>
+<span class="l"> 3: </span>
+<span class="l"> 4: </span>
+<span class="l"> 5: </span>
+<span class="l"> 6: </span>
+<span class="l"> 7: </span>
+<span class="l"> 8: </span>
+<span class="l"> 9: </span>
+<span class="l">10: </span>
+<span class="l">11: </span>
+<span class="l">12: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp">   <span class="id">Target</span><span class="pn">.</span><span class="id">create</span> <span class="s">&quot;FxCop&quot;</span> <span class="pn">(</span><span class="k">fun</span> <span class="id">_</span> <span class="k">-&gt;</span>
+       <span class="id">Directory</span><span class="pn">.</span><span class="id">ensure</span> <span class="s">&quot;./_Reports&quot;</span>
+       <span class="k">let</span> <span class="id">rules</span> <span class="o">=</span> <span class="pn">[</span> <span class="s">&quot;-Microsoft.Design#CA1011&quot;</span>   <span class="c">// maybe sometimes</span>
+                     <span class="s">&quot;-Microsoft.Design#CA1062&quot;</span> <span class="pn">]</span> <span class="c">// null checks,  In F#!</span>
+       <span class="o">!!</span> <span class="pn">(</span><span class="s">&quot;**/bin/Debug/*.dll&quot;</span><span class="pn">)</span>
+       <span class="o">|&gt;</span> <span class="id">FxCop</span><span class="pn">.</span><span class="id">run</span> <span class="pn">{</span> <span class="id">FxCop</span><span class="pn">.</span><span class="id">Params</span><span class="pn">.</span><span class="id">Create</span><span class="pn">(</span><span class="pn">)</span> <span class="k">with</span> <span class="id">WorkingDirectory</span> <span class="o">=</span> <span class="s">&quot;.&quot;</span>
+                                                 <span class="id">UseGAC</span> <span class="o">=</span> <span class="k">true</span>
+                                                 <span class="id">Verbose</span> <span class="o">=</span> <span class="k">false</span>
+                                                 <span class="id">ReportFileName</span> <span class="o">=</span> <span class="s">&quot;_Reports/FxCopReport.xml&quot;</span>
+                                                 <span class="id">Rules</span> <span class="o">=</span> <span class="id">rules</span>
+                                                 <span class="id">FailOnError</span> <span class="o">=</span> <span class="id">FxCop</span><span class="pn">.</span><span class="id">ErrorLevel</span><span class="pn">.</span><span class="id">Warning</span>
+                                                 <span class="id">IgnoreGeneratedCode</span> <span class="o">=</span> <span class="k">true</span><span class="pn">}</span><span class="pn">)</span>
+</code></pre></td>
+</tr>
+</table>
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="module-name">
             <a href="fake-dotnet-mage.html">Mage</a>
           </td>
           <td class="xmldoc">
@@ -3000,7 +3040,7 @@ All operations assume that the CommandHelper can find git.exe.</p>
 									</ul>
 								</div>
 							</div>
-							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.9.4-alpha.762</a></div>
+							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.9.4-alpha.763</a></div>
 						</div>
 						<div class="column is-6">
 							<h4 class="title is-4">FAKE is a community effort</h4>
