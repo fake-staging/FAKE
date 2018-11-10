@@ -356,7 +356,7 @@ Fake Build Options [build_opts]:
 -f, --script &lt;script.fsx&gt;
                         The script to execute (defaults to `build.fsx`).
 </code></pre></td></tr></table>
-<p>Please refer to the <a href="core-commandlineparsing.html">Fake.Core.CommandLineParsing documentation</a> for a explanation of the synax.</p>
+<p>Please refer to the <a href="core-commandlineparsing.html">Fake.Core.CommandLineParsing</a> documentation for a explanation of the synax.</p>
 <p>For now fake only supports the <code>run</code> and <code>build</code> subcommands which are basically equivalent to the Fake as you know it, but more are planned in the future. In general you should use the <code>run</code> subcommand in scripting when you use parameters, because it is safer in regards to adding options without breaking. Use <code>build</code> to have a more dense workflow in the command line</p>
 <h2><a name="Disclaimer" class="anchor" href="#Disclaimer">Disclaimer</a></h2>
 <p>Ordering of arguments does MATTER. This is a change in behavior from FAKE version 4 to 5.</p>
@@ -376,7 +376,7 @@ Currently Fake supports 4 verbosity levels:</p>
 <li>two <code>--verbose --verbose</code> or <code>-vv</code> mean to set other projects (like paket) to verbose mode as well.</li>
 </ul>
 <h3><a name="header-1" class="anchor" href="#header-1"><code>--version</code></a></h3>
-<p>Print FAKE version information.</p>
+<p>Prints FAKE version information.</p>
 <h3><a name="header-2" class="anchor" href="#header-2"><code>--help</code></a></h3>
 <p>Prints help information. In contract to the other options you can use --help everywhere.
 For example <code>fake run --help</code> to get help about the <code>run</code> subcommand.</p>
@@ -394,7 +394,7 @@ For example <code>fake run --help</code> to get help about the <code>run</code> 
 <h3><a name="or-1" class="anchor" href="#or-1"><code>--help</code> or <code>-h</code></a></h3>
 <p>Display CLI help.</p>
 <h2><a name="Running-Targets" class="anchor" href="#Running-Targets">Running Targets</a></h2>
-<p>Please refer to the <a href="core-targets.html">target module documentation</a></p>
+<p>Please refer to the <a href="core-targets.html">Fake.Core.Target</a> module documentation</p>
 <p>For reference the CLI for the targets-module looks like this:</p>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
 <span class="l"> 2: </span>
@@ -463,7 +463,7 @@ Target Module Options [target_opts]:
 									</ul>
 								</div>
 							</div>
-							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.9.4-alpha.769</a></div>
+							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.10.0-alpha.770</a></div>
 						</div>
 						<div class="column is-6">
 							<h4 class="title is-4">FAKE is a community effort</h4>

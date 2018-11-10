@@ -318,12 +318,12 @@ dotnet tool install fake-cli -g
 <pre><code class="lang-bash">
 dotnet tool install fake-cli --tool-path your<em>tool</em>path
 </code></pre></p>
-<p>Use <code>--version</code> to specify the version of FAKE. See the <a href="https://github.com/FakeBuild/fake-bootstrap/tree/global_tool"><code>global_tool</code> branch of <code>fake-bootstrap</code></a> for ideas to bootstrap in your CI process.</p>
+<p>Use <code>--version</code> to specify the version of FAKE. See the <a href="https://github.com/FakeBuild/fake-bootstrap/tree/global_tool"><code>global_tool</code></a> branch of <code>fake-bootstrap</code> for ideas to bootstrap in your CI process.</p>
 </li>
 </ul>
 </li>
 <li>
-<p>Bootstrap via the <a href="fake-template.html">fake dotnet new template</a>. The template bootstraps FAKE and sets up a basic build-script.</p>
+<p>Bootstrap via the <code>fake dotnet new</code> <a href="fake-template.html">template</a>. The template bootstraps FAKE and sets up a basic build-script.</p>
 <ul>
 <li>
 <p>To install the template run:
@@ -341,28 +341,28 @@ dotnet new fake
 </ul>
 </li>
 <li>
-<p>Install the 'fake' or 'fake-netcore' package for you system (currenty chocolatey).<br />
+<p>Install the 'fake' or 'fake-netcore' package for your system (currenty chocolatey).
 Example <code>choco install fake</code></p>
 </li>
-<li><p>Use it as dotnet tool: Add <code>&lt;DotNetCliToolReference Include="dotnet-fake" Version="5.*" /&gt;</code> to your dependencies and run <code>dotnet fake ...</code> instead of <code>fake ...</code>, see <a href="https://github.com/FakeBuild/fake-bootstrap/blob/master/dotnet-fake.csproj">this example</a></p></li>
+<li><p>Use it as a dotnet tool: Add <code>&lt;DotNetCliToolReference Include="dotnet-fake" Version="5.*" /&gt;</code> to your dependencies and run <code>dotnet fake ...</code> instead of <code>fake ...</code>, see <a href="https://github.com/FakeBuild/fake-bootstrap/blob/master/dotnet-fake.csproj">this example</a></p></li>
 </ul>
 <ul>
 <li>
-<p>Bootstrap via shell script (fake.cmd/fake.sh),
+<p>Bootstrap via a shell script (fake.cmd/fake.sh),
 see this <a href="https://github.com/FakeBuild/fake-bootstrap">example project</a>
 <div class="alert alert-warning">
 <h5>WARNING</h5>
 <p>These scripts have no versioning story. You either need to take care of versions yourself (and lock them) or your builds might break on major releases.</p>
 </div></p>
 </li>
-<li><p>Bootstrap via paket <code>clitool</code>, basically the same as <code>DotNetCliToolReference</code> but managed via paket. See the <a href="https://github.com/FakeBuild/fake-bootstrap/tree/paket_clitool"><code>paket_clitool</code> branch of <code>fake-bootstrap</code></a> in particular the <a href="https://github.com/FakeBuild/fake-bootstrap/blob/paket_clitool/build.proj">build.proj</a> file.</p></li>
+<li><p>Bootstrap via paket <code>clitool</code>, this is basically the same as <code>DotNetCliToolReference</code> but managed via paket. See the <a href="https://github.com/FakeBuild/fake-bootstrap/tree/paket_clitool"><code>paket_clitool</code></a> branch of <code>fake-bootstrap</code> in particular the <a href="https://github.com/FakeBuild/fake-bootstrap/blob/paket_clitool/build.proj">build.proj</a> file.</p></li>
 </ul>
 <h2><a name="One-note-on-Intellisense" class="anchor" href="#One-note-on-Intellisense">One note on Intellisense</a></h2>
-<p>Whenever you update the dependencies (part of the example) delete the <code>&lt;script&gt;.fsx.lock</code> file and re-run fake to update all files and intellisense!</p>
+<p>Whenever you update the dependencies (part of the example), you need to delete the <code>&lt;script&gt;.fsx.lock</code> file and re-run fake to update all files and intellisense!</p>
 <h2><a name="Example-Compiling-and-building-your-NET-application" class="anchor" href="#Example-Compiling-and-building-your-NET-application">Example - Compiling and building your .NET application</a></h2>
 <p>This example will guide you by adding a fake script to your existing .NET application.</p>
 <h3><a name="Getting-started-1" class="anchor" href="#Getting-started-1">Getting started</a></h3>
-<p>Initially we need to create a file called <code>build.fsx</code> where our build-logic will have its home.
+<p>Initially we need to create a file called <code>build.fsx</code> where all our build-logic will reside.
 Create a new file with Visual Studio or Visual Studio Code (with ionide) and paste the following content:</p>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 <span class="l">2: </span>
@@ -375,8 +375,8 @@ Create a new file with Visual Studio or Visual Studio Code (with ionide) and pas
 </tr>
 </table>
 <p>This is all we need for now to declare that we need the <code>Fake.Core.Target</code> module and want to enable intellisense.</p>
-<p>Now run <code>fake run build.fsx</code> to make fake prepare our environment. Now our IDE can load the dependencies and will have intellisense enabled (you might need to reopen the script file on some editors).</p>
-<p>Now that we have setup our basic environment to edit the script file we add our first target:</p>
+<p>Now run <code>fake run build.fsx</code> to make fake prepare our environment. Now our IDE can load the dependencies and we will have intellisense enabled (you might need to reopen the script file on some editors).</p>
+<p>Now that we have setup our basic environment to edit the script file we can add our first target:</p>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
 <span class="l"> 2: </span>
 <span class="l"> 3: </span>
@@ -407,7 +407,7 @@ Create a new file with Visual Studio or Visual Studio Code (with ionide) and pas
 </code></pre></td>
 </tr>
 </table>
-<p>As you can see the code is really simple. The few first lines (<code>nuget Fake.Core.Target</code> and <code>open Fake.Core</code>) load the fake modules we need and is vital for all build scripts to support creating and running targets. The <code>#load</code> line is optional but a good way to make the IDE aware of all the modules (for intellisense and IDE support)</p>
+<p>As you can see the code is really simple. The first few lines (<code>nuget Fake.Core.Target</code> and <code>open Fake.Core</code>) load the fake modules we need and this is vital for all build scripts to support creating and running targets. The <code>#load</code> line is optional but a good way to make the IDE aware of all the modules (for intellisense and IDE support)</p>
 <p>After this header the <em>Default</em> target is defined. A target definition contains two important parts. The first is the name of the target (here "Default") and the second is an action (here a simple trace of "Hello world").</p>
 <p>The last line runs the "Default" target - which means it executes the defined action of the target.</p>
 <p>Try running your new target via <code>fake run build.fsx</code> or the shortcut for a file called <code>build.fsx</code>: <code>fake build</code></p>
@@ -426,8 +426,8 @@ Create a new file with Visual Studio or Visual Studio Code (with ionide) and pas
 </code></pre></td>
 </tr>
 </table>
-<p>Now we remove the <code>build.fsx.lock</code> file and run <code>fake build</code> in order to restore the newly added <code>Fake.IO.FileSystem</code> module.</p>
-<p>As we can now work with intellisense we can easily discover the various modules and functions in <code>Fake.IO</code>, for example the <code>Shell</code> module provides various functions you expect from regular shell scripting, but we use <code>Shell.CleanDir</code> which will ensure the given directory is empty by deleting everything within or creating the directory if required:</p>
+<p>Now we need to remove the <code>build.fsx.lock</code> file and run <code>fake build</code> in order to restore the newly added <code>Fake.IO.FileSystem</code> module.</p>
+<p>Since we now can rely on intellisense we can easily discover the various modules and functions in <code>Fake.IO</code>, for example the <code>Shell</code> module provides various functions you expect from regular shell scripting, we will use <code>Shell.cleanDir</code> which will ensure the given directory is empty by deleting everything within or creating the directory if required:</p>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
 <span class="l"> 2: </span>
 <span class="l"> 3: </span>
@@ -494,14 +494,14 @@ Create a new file with Visual Studio or Visual Studio Code (with ionide) and pas
     You can remove <code>Fake.IO</code> once you put <code>open Fake.IO</code> on top.
 </div>
 <p>We introduced some new concepts in this snippet. At first we defined a global property called <code>buildDir</code> with the relative path of a temporary build folder.</p>
-<p>In the <code>Clean</code> target we use the <code>Shell.CleanDir</code> task to clean up this build directory. As explained above this simply deletes all files in the folder or creates the directory if necessary.</p>
-<p>In the dependencies section we say that the <em>Default</em> target has a dependency on the <em>Clean</em> target. In other words <em>Clean</em> is a prerequisite of <em>Default</em> and will be run before the execution of <em>Default</em>:</p>
+<p>In the <code>Clean</code> target we use the <code>Shell.cleanDir</code> task to clean up this build directory. As explained above this simply deletes all files in the folder or creates the directory if necessary.</p>
+<p>In the dependencies section we say that the <em>Default</em> target has a dependency on the <em>Clean</em> target. In other words <em>Clean</em> is a prerequisite of <em>Default</em> and will run before the <em>Default</em> target is executed:</p>
 <p><img src="pics/gettingstarted/afterclean.png" alt="alt text" title="We introduced a Clean target" /></p>
 <h3><a name="Compiling-the-application" class="anchor" href="#Compiling-the-application">Compiling the application</a></h3>
 <p>In the next step we want to compile our C# libraries, which means we want to compile all csproj-files under <em>/src/app</em> with MSBuild.</p>
-<p>Again we need some new module for this, namely <code>Fake.DotNet.MSBuild</code>.</p>
+<p>Again we need a new module for this, namely <code>Fake.DotNet.MSBuild</code>.</p>
 <p>Just like before add the required module on top via <code>nuget Fake.DotNet.MSBuild</code>, delete the <code>build.fsx.lock</code> file and run the script.
-Now edit the script like this:</p>
+Now edit the script so it looks like this:</p>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
 <span class="l"> 2: </span>
 <span class="l"> 3: </span>
@@ -683,7 +683,7 @@ Now edit the script like this:</p>
 </table>
 <p>This time we defined a new target "BuildTest" which compiles all C# projects below <em>src/test/</em> in Debug mode and we put the target into our build order.</p>
 <h3><a name="Running-the-tests-with-NUnit" class="anchor" href="#Running-the-tests-with-NUnit">Running the tests with NUnit</a></h3>
-<p>Now all our projects will be compiled and we can use FAKE's NUnit task in order to let NUnit test our assembly (again we need a new module <code>Fake.DotNet.Testing.NUnit</code>):</p>
+<p>Now all our projects will be compiled and we can use FAKE's NUnit task in order to let NUnit test our assembly (we have to add a new module for this: <code>Fake.DotNet.Testing.NUnit</code>):</p>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
 <span class="l"> 2: </span>
 <span class="l"> 3: </span>
@@ -853,7 +853,7 @@ Now edit the script like this:</p>
 									</ul>
 								</div>
 							</div>
-							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.9.4-alpha.769</a></div>
+							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.10.0-alpha.770</a></div>
 						</div>
 						<div class="column is-6">
 							<h4 class="title is-4">FAKE is a community effort</h4>
