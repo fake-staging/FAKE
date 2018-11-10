@@ -107,7 +107,7 @@ group Build
 // [ FAKE GROUP ]
 group NetcoreBuild
     source https://api.nuget.org/v3/index.json
-    // FAKE_MYGET_FEED (don't edit this line)
+    source https://www.myget.org/F/fake-vsts/api/v3/index.json
     //source https://www.myget.org/F/fake-vsts/api/v3/index.json
     storage: none
     //source https://ci.appveyor.com/nuget/fake
@@ -117,28 +117,28 @@ group NetcoreBuild
     nuget Suave
     nuget System.AppContext prerelease
     nuget Paket.Core // prerelease
-    nuget Fake.Api.GitHub prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.Core.Target prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.Core.SemVer prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.BuildServer.AppVeyor prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.BuildServer.TeamCity prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.BuildServer.Travis prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.BuildServer.TeamFoundation prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.BuildServer.GitLab prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.IO.FileSystem prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.IO.Zip prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.Core.ReleaseNotes prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.DotNet.AssemblyInfoFile prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.DotNet.MsBuild prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.DotNet.Cli prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.DotNet.NuGet prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.DotNet.Paket prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.DotNet.FSFormatting prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.DotNet.Testing.MSpec prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.DotNet.Testing.XUnit2 prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.DotNet.Testing.NUnit prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.Windows.Chocolatey prerelease // FAKE_VERSION (don't edit this line)
-    nuget Fake.Tools.Git prerelease // FAKE_VERSION (don't edit this line)
+    nuget Fake.Api.GitHub 5.10.0
+    nuget Fake.Core.Target 5.10.0
+    nuget Fake.Core.SemVer 5.10.0
+    nuget Fake.BuildServer.AppVeyor 5.10.0
+    nuget Fake.BuildServer.TeamCity 5.10.0
+    nuget Fake.BuildServer.Travis 5.10.0
+    nuget Fake.BuildServer.TeamFoundation 5.10.0
+    nuget Fake.BuildServer.GitLab 5.10.0
+    nuget Fake.IO.FileSystem 5.10.0
+    nuget Fake.IO.Zip 5.10.0
+    nuget Fake.Core.ReleaseNotes 5.10.0
+    nuget Fake.DotNet.AssemblyInfoFile 5.10.0
+    nuget Fake.DotNet.MsBuild 5.10.0
+    nuget Fake.DotNet.Cli 5.10.0
+    nuget Fake.DotNet.NuGet 5.10.0
+    nuget Fake.DotNet.Paket 5.10.0
+    nuget Fake.DotNet.FSFormatting 5.10.0
+    nuget Fake.DotNet.Testing.MSpec 5.10.0
+    nuget Fake.DotNet.Testing.XUnit2 5.10.0
+    nuget Fake.DotNet.Testing.NUnit 5.10.0
+    nuget Fake.Windows.Chocolatey 5.10.0
+    nuget Fake.Tools.Git 5.10.0
     nuget Mono.Cecil prerelease
     nuget Octokit
     nuget Newtonsoft.Json
