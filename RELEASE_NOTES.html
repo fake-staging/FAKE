@@ -301,9 +301,12 @@
 <li>NEW: module <code>Fake.DotNet.FxCop</code> - <a href="https://github.com/fsharp/FAKE/pull/2174">https://github.com/fsharp/FAKE/pull/2174</a></li>
 <li>ENHANCEMENT: add new ReportType "Cobertura" to <code>Fake.Testing.ReportGenerator</code> - <a href="https://github.com/fsharp/FAKE/pull/2163">https://github.com/fsharp/FAKE/pull/2163</a></li>
 <li>ENHANCEMENT: the fake template now supports the buildtask-dsl - <a href="https://github.com/fsharp/FAKE/pull/2177">https://github.com/fsharp/FAKE/pull/2177</a></li>
+<li>ENHANCEMENT: add new fake hints for <a href="https://github.com/fsharp/FAKE/issues/2097,">https://github.com/fsharp/FAKE/issues/2097,</a> <a href="https://github.com/fsharp/FAKE/issues/2099">https://github.com/fsharp/FAKE/issues/2099</a> and <a href="https://github.com/fsharp/FAKE/issues/2181">https://github.com/fsharp/FAKE/issues/2181</a></li>
 <li>BUGFIX: Dispose streams created by File.create - <a href="https://github.com/fsharp/FAKE/pull/2184/files">https://github.com/fsharp/FAKE/pull/2184/files</a></li>
 <li>BUGFIX: NuGet.Version.getLastNuGetVersion failed for some servers - <a href="https://github.com/fsharp/FAKE/pull/2170">https://github.com/fsharp/FAKE/pull/2170</a></li>
 <li>BUGFIX: Fake.DotNet.Tesing.NUnit failed to work when temporary-directory contains spaces (for example if windows username contains spaces) - <a href="https://github.com/fsharp/FAKE/pull/2180">https://github.com/fsharp/FAKE/pull/2180</a></li>
+<li>BUGFIX: <code>--silent</code> now disables fake hints as well</li>
+<li>(Minor) BREAKING: Refactor &amp; cleanup <code>Fake.Runtime</code> internals - make sure to open an issue if you are hit by this.</li>
 <li>OTHER: Internal code cleanup - <a href="https://github.com/fsharp/FAKE/pull/2162">https://github.com/fsharp/FAKE/pull/2162</a></li>
 </ul>
 <h2><a name="5-9-3-2018-10-15" class="anchor" href="#5-9-3-2018-10-15">5.9.3 - 2018-10-15</a></h2>
@@ -2082,7 +2085,7 @@ New tasks:
 									</ul>
 								</div>
 							</div>
-							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.10.0-alpha.776</a></div>
+							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.10.0-alpha.781</a></div>
 						</div>
 						<div class="column is-6">
 							<h4 class="title is-4">FAKE is a community effort</h4>
