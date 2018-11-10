@@ -327,6 +327,12 @@ to run your build. Have a look at the <a href="fake-commandline.html">fake comma
 <li><code>inline</code> - Defines build dependencies inside the build script</li>
 <li><code>none</code> - Use this if you already have a <code>paket.dependencies</code> in your folder</li>
 </ul>
+<h3><a name="dsl" class="anchor" href="#dsl">--dsl</a></h3>
+<p>Specifies your prefered way to define build tasks inside your build script:</p>
+<ul>
+<li><code>fake</code> (default) - Uses the default FAKE domain specific language</li>
+<li><code>buildtask</code> - Uses a string free domain specific language, called <a href="https://github.com/vbfox/FoxSharp/blob/master/src/BlackFox.Fake.BuildTask/Readme.md">BuildTask</a></li>
+</ul>
 <h3><a name="tool-path" class="anchor" href="#tool-path">--tool-path</a></h3>
 <p>Specifies the folder for the fake-cli tool. This parameter is only applicable when <code>tool</code> option is used for bootstrapping with <code>--bootstrap</code>. Defaults to <code>.fake</code>.</p>
 <h3><a name="version" class="anchor" href="#version">--version</a></h3>
@@ -369,7 +375,7 @@ to run your build. Have a look at the <a href="fake-commandline.html">fake comma
 									</ul>
 								</div>
 							</div>
-							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.10.0-alpha.771</a></div>
+							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.10.0-alpha.774</a></div>
 						</div>
 						<div class="column is-6">
 							<h4 class="title is-4">FAKE is a community effort</h4>
