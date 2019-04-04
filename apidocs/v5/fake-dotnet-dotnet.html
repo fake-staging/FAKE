@@ -410,7 +410,9 @@
             <a href="fake-dotnet-dotnet-nugetpushoptions.html">NuGetPushOptions</a>
           </td>
           <td class="xmldoc">
-            
+            <p>nuget push paramters for <code>dotnet nuget push</code></p>
+
+
           </td>
         </tr>
         <tr>
@@ -1036,7 +1038,7 @@ This file can exist in the working directory or any of the parent directories</p
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L1469-1469" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.Cli/DotNet.fs#L1485-1485" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>Execute dotnet nuget push command</p>
@@ -1045,6 +1047,47 @@ This file can exist in the working directory or any of the parent directories</p
 <li>'setParams' - set nuget push command parameters</li>
 <li>'nupkg' - nupkg to publish</li>
 </ul>
+<h2>Sample</h2>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
+<span class="l"> 2: </span>
+<span class="l"> 3: </span>
+<span class="l"> 4: </span>
+<span class="l"> 5: </span>
+<span class="l"> 6: </span>
+<span class="l"> 7: </span>
+<span class="l"> 8: </span>
+<span class="l"> 9: </span>
+<span class="l">10: </span>
+<span class="l">11: </span>
+<span class="l">12: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">open</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="id">Fake</span><span class="pn">.</span><span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="id">DotNet</span>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="fn">setNugetPushParams</span> <span class="pn">(</span><span onmouseout="hideTip(event, 'fs4', 4)" onmouseover="showTip(event, 'fs4', 4)" class="id">defaults</span><span class="pn">:</span><span onmouseout="hideTip(event, 'fs5', 5)" onmouseover="showTip(event, 'fs5', 5)" class="id">NuGet</span><span class="pn">.</span><span class="id">NuGetPushParams</span><span class="pn">)</span> <span class="o">=</span>
+        <span class="pn">{</span> <span onmouseout="hideTip(event, 'fs4', 6)" onmouseover="showTip(event, 'fs4', 6)" class="id">defaults</span> <span class="k">with</span>
+            <span class="id">DisableBuffering</span> <span class="o">=</span> <span class="k">true</span>
+            <span class="id">ApiKey</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs6', 7)" onmouseover="showTip(event, 'fs6', 7)" class="id">Some</span> <span class="s">&quot;abc123&quot;</span>
+         <span class="pn">}</span>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs7', 8)" onmouseover="showTip(event, 'fs7', 8)" class="fn">setParams</span> <span class="pn">(</span><span onmouseout="hideTip(event, 'fs8', 9)" onmouseover="showTip(event, 'fs8', 9)" class="id">defaults</span><span class="pn">:</span><span onmouseout="hideTip(event, 'fs9', 10)" onmouseover="showTip(event, 'fs9', 10)" class="m">DotNet</span><span class="pn">.</span><span onmouseout="hideTip(event, 'fs10', 11)" onmouseover="showTip(event, 'fs10', 11)" class="id">NuGetPushOptions</span><span class="pn">)</span> <span class="o">=</span>
+        <span class="pn">{</span> <span onmouseout="hideTip(event, 'fs8', 12)" onmouseover="showTip(event, 'fs8', 12)" class="id">defaults</span> <span class="k">with</span>
+            <span class="id">PushParams</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs3', 13)" onmouseover="showTip(event, 'fs3', 13)" class="fn">setNugetPushParams</span> <span onmouseout="hideTip(event, 'fs8', 14)" onmouseover="showTip(event, 'fs8', 14)" class="id">defaults</span><span class="pn">.</span><span onmouseout="hideTip(event, 'fs11', 15)" onmouseover="showTip(event, 'fs11', 15)" class="id">PushParams</span>
+         <span class="pn">}</span>
+
+<span onmouseout="hideTip(event, 'fs9', 16)" onmouseover="showTip(event, 'fs9', 16)" class="m">DotNet</span><span class="pn">.</span><span onmouseout="hideTip(event, 'fs12', 17)" onmouseover="showTip(event, 'fs12', 17)" class="id">nugetPush</span> <span onmouseout="hideTip(event, 'fs7', 18)" onmouseover="showTip(event, 'fs7', 18)" class="fn">setParams</span> <span class="s">&quot;./My.Package.nupkg&quot;</span>
+</code></pre></td>
+</tr>
+</table>
+<div class="tip" id="fs1">namespace Fake</div>
+<div class="tip" id="fs2">namespace Fake.DotNet</div>
+<div class="tip" id="fs3">val setNugetPushParams : defaults:&#39;a -&gt; &#39;a</div>
+<div class="tip" id="fs4">val defaults : &#39;a</div>
+<div class="tip" id="fs5">namespace Fake.DotNet.NuGet</div>
+<div class="tip" id="fs6">union case Option.Some: Value: &#39;T -&gt; Option&lt;&#39;T&gt;</div>
+<div class="tip" id="fs7">val setParams : defaults:DotNet.NuGetPushOptions -&gt; DotNet.NuGetPushOptions</div>
+<div class="tip" id="fs8">val defaults : DotNet.NuGetPushOptions</div>
+<div class="tip" id="fs9">module DotNet<br /><br />from Fake.DotNet</div>
+<div class="tip" id="fs10">type NuGetPushOptions =<br />&#160;&#160;{Common: Options;<br />&#160;&#160;&#160;PushParams: NuGetPushParams;}<br />&#160;&#160;&#160;&#160;member WithCommon : common:Options -&gt; NuGetPushOptions<br />&#160;&#160;&#160;&#160;member WithPushParams : options:NuGetPushParams -&gt; NuGetPushOptions<br />&#160;&#160;&#160;&#160;static member Create : unit -&gt; NuGetPushOptions</div>
+<div class="tip" id="fs11">DotNet.NuGetPushOptions.PushParams: NuGet.NuGet.NuGetPushParams</div>
+<div class="tip" id="fs12">val nugetPush : setParams:(DotNet.NuGetPushOptions -&gt; DotNet.NuGetPushOptions) -&gt; nupkg:string -&gt; unit</div>
 
 
         </td>
@@ -1490,7 +1533,7 @@ Returns None if global.json is not found</p>
 									</ul>
 								</div>
 							</div>
-							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.12.7-alpha.953</a></div>
+							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.12.7-alpha.954</a></div>
 						</div>
 						<div class="column is-6">
 							<h4 class="title is-4">FAKE is a community effort</h4>
