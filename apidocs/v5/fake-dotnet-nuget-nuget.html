@@ -346,6 +346,16 @@ There is also a tutorial about <a href="../create-nuget-package.html">nuget pack
         </tr>
         <tr>
           <td class="type-name">
+            <a href="fake-dotnet-nuget-nuget-nugetpushparams.html">NuGetPushParams</a>
+          </td>
+          <td class="xmldoc">
+            <p>dotnet nuget push command options</p>
+
+
+          </td>
+        </tr>
+        <tr>
+          <td class="type-name">
             <a href="fake-dotnet-nuget-nuget-nuspecpackage.html">NuSpecPackage</a>
           </td>
           <td class="xmldoc">
@@ -404,6 +414,14 @@ There is also a tutorial about <a href="../create-nuget-package.html">nuget pack
         </tr>
         <tr>
           <td class="type-name">
+            <a href="fake-dotnet-nuget-nuget-tooloptions.html">ToolOptions</a>
+          </td>
+          <td class="xmldoc">
+            
+          </td>
+        </tr>
+        <tr>
+          <td class="type-name">
             <a href="fake-dotnet-nuget-nuget-webclient.html">WebClient</a>
           </td>
           <td class="xmldoc">
@@ -424,49 +442,15 @@ There is also a tutorial about <a href="../create-nuget-package.html">nuget pack
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1193', 1193)" onmouseover="showTip(event, '1193', 1193)">
+          <code onmouseout="hideTip(event, '1195', 1195)" onmouseover="showTip(event, '1195', 1195)">
             addAcceptHeader client contentType
           </code>
-          <div class="tip" id="1193">
+          <div class="tip" id="1195">
             <strong>Signature:</strong> client:HttpClient -&gt; contentType:string -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L606-606" class="github-link">
-              <i class="fab fa-github fa-fw"></i>
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1194', 1194)" onmouseover="showTip(event, '1194', 1194)">
-            addHeader client headerKey headerVal
-          </code>
-          <div class="tip" id="1194">
-            <strong>Signature:</strong> client:HttpClient -&gt; headerKey:string -&gt; headerVal:string -&gt; unit<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L609-609" class="github-link">
-              <i class="fab fa-github fa-fw"></i>
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1195', 1195)" onmouseover="showTip(event, '1195', 1195)">
-            createNuSpecFromTemplate(...)
-          </code>
-          <div class="tip" id="1195">
-            <strong>Signature:</strong> parameters:NuGetParams -&gt; templateNuSpec:FileInfo -&gt; string<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L160-160" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L684-684" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -476,14 +460,14 @@ There is also a tutorial about <a href="../create-nuget-package.html">nuget pack
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1196', 1196)" onmouseover="showTip(event, '1196', 1196)">
-            createNuSpecFromTemplateIfNotProjFile(...)
+            addHeader client headerKey headerVal
           </code>
           <div class="tip" id="1196">
-            <strong>Signature:</strong> parameters:NuGetParams -&gt; nuSpecOrProjFile:string -&gt; string option<br />
+            <strong>Signature:</strong> client:HttpClient -&gt; headerKey:string -&gt; headerVal:string -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L262-262" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L687-687" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -493,14 +477,48 @@ There is also a tutorial about <a href="../create-nuget-package.html">nuget pack
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1197', 1197)" onmouseover="showTip(event, '1197', 1197)">
-            feedUrl
+            createNuSpecFromTemplate(...)
           </code>
           <div class="tip" id="1197">
+            <strong>Signature:</strong> parameters:NuGetParams -&gt; templateNuSpec:FileInfo -&gt; string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L172-172" class="github-link">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1198', 1198)" onmouseover="showTip(event, '1198', 1198)">
+            createNuSpecFromTemplateIfNotProjFile(...)
+          </code>
+          <div class="tip" id="1198">
+            <strong>Signature:</strong> parameters:NuGetParams -&gt; nuSpecOrProjFile:string -&gt; string option<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L274-274" class="github-link">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1199', 1199)" onmouseover="showTip(event, '1199', 1199)">
+            feedUrl
+          </code>
+          <div class="tip" id="1199">
             <strong>Signature:</strong> string<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L541-541" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L619-619" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>Default NuGet feed</p>
@@ -511,15 +529,15 @@ There is also a tutorial about <a href="../create-nuget-package.html">nuget pack
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1198', 1198)" onmouseover="showTip(event, '1198', 1198)">
+          <code onmouseout="hideTip(event, '1200', 1200)" onmouseover="showTip(event, '1200', 1200)">
             getDependencies(packagesFile)
           </code>
-          <div class="tip" id="1198">
+          <div class="tip" id="1200">
             <strong>Signature:</strong> packagesFile:string -&gt; NuGetDependency list<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L722-722" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L800-800" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>Returns the dependencies from specified packages.config file</p>
@@ -530,15 +548,15 @@ There is also a tutorial about <a href="../create-nuget-package.html">nuget pack
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1199', 1199)" onmouseover="showTip(event, '1199', 1199)">
+          <code onmouseout="hideTip(event, '1201', 1201)" onmouseover="showTip(event, '1201', 1201)">
             getNuspecProperties(nuspec)
           </code>
-          <div class="tip" id="1199">
+          <div class="tip" id="1201">
             <strong>Signature:</strong> nuspec:string -&gt; NuSpecPackage<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L487-487" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L565-565" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>Parses nuspec metadata from a nuspec file.</p>
@@ -553,15 +571,15 @@ There is also a tutorial about <a href="../create-nuget-package.html">nuget pack
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1200', 1200)" onmouseover="showTip(event, '1200', 1200)">
+          <code onmouseout="hideTip(event, '1202', 1202)" onmouseover="showTip(event, '1202', 1202)">
             GetPackageVersion deploymentsDir package
           </code>
-          <div class="tip" id="1200">
+          <div class="tip" id="1202">
             <strong>Signature:</strong> deploymentsDir:string -&gt; package:string -&gt; string<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L138-138" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L150-150" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>Gets the version no. for a given package in the deployments folder</p>
@@ -572,15 +590,15 @@ There is also a tutorial about <a href="../create-nuget-package.html">nuget pack
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1201', 1201)" onmouseover="showTip(event, '1201', 1201)">
+          <code onmouseout="hideTip(event, '1203', 1203)" onmouseover="showTip(event, '1203', 1203)">
             NuGet setParams nuspecOrProjectFile
           </code>
-          <div class="tip" id="1201">
+          <div class="tip" id="1203">
             <strong>Signature:</strong> setParams:(NuGetParams -&gt; NuGetParams) -&gt; nuspecOrProjectFile:string -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L439-439" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L517-517" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>Creates a new NuGet package, and optionally publishes it.
@@ -597,15 +615,15 @@ Template parameter substitution is performed when passing a .nuspec</p>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1202', 1202)" onmouseover="showTip(event, '1202', 1202)">
+          <code onmouseout="hideTip(event, '1204', 1204)" onmouseover="showTip(event, '1204', 1204)">
             NuGetDefaults()
           </code>
-          <div class="tip" id="1202">
+          <div class="tip" id="1204">
             <strong>Signature:</strong> unit -&gt; NuGetParams<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L79-79" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L91-91" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>NuGet default parameters</p>
@@ -616,15 +634,15 @@ Template parameter substitution is performed when passing a .nuspec</p>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1203', 1203)" onmouseover="showTip(event, '1203', 1203)">
+          <code onmouseout="hideTip(event, '1205', 1205)" onmouseover="showTip(event, '1205', 1205)">
             NuGetPack setParams nuspecOrProjectFile
           </code>
-          <div class="tip" id="1203">
+          <div class="tip" id="1205">
             <strong>Signature:</strong> setParams:(NuGetParams -&gt; NuGetParams) -&gt; nuspecOrProjectFile:string -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L402-402" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L480-480" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>Creates a new NuGet package based on the given .nuspec or project file.
@@ -641,15 +659,15 @@ Template parameter substitution is performed when passing a .nuspec</p>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1204', 1204)" onmouseover="showTip(event, '1204', 1204)">
+          <code onmouseout="hideTip(event, '1206', 1206)" onmouseover="showTip(event, '1206', 1206)">
             NuGetPackDirectly(...)
           </code>
-          <div class="tip" id="1204">
+          <div class="tip" id="1206">
             <strong>Signature:</strong> setParams:(NuGetParams -&gt; NuGetParams) -&gt; nuspecOrProjectFile:string -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L384-384" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L462-462" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>Creates a new NuGet package based on the given .nuspec or project file.
@@ -666,15 +684,15 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1205', 1205)" onmouseover="showTip(event, '1205', 1205)">
+          <code onmouseout="hideTip(event, '1207', 1207)" onmouseover="showTip(event, '1207', 1207)">
             NuGetPublish(setParams)
           </code>
-          <div class="tip" id="1205">
+          <div class="tip" id="1207">
             <strong>Signature:</strong> setParams:(NuGetParams -&gt; NuGetParams) -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L422-422" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L500-500" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>Publishes a NuGet package to the nuget server.</p>
@@ -689,15 +707,15 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1206', 1206)" onmouseover="showTip(event, '1206', 1206)">
+          <code onmouseout="hideTip(event, '1208', 1208)" onmouseover="showTip(event, '1208', 1208)">
             pack parameters nuspecFile
           </code>
-          <div class="tip" id="1206">
+          <div class="tip" id="1208">
             <strong>Signature:</strong> parameters:NuGetParams -&gt; nuspecFile:string -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L277-277" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L289-289" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>Creates a NuGet package without templating (including symbols package if enabled)</p>
@@ -708,68 +726,66 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1207', 1207)" onmouseover="showTip(event, '1207', 1207)">
+          <code onmouseout="hideTip(event, '1209', 1209)" onmouseover="showTip(event, '1209', 1209)">
             packageFileName(parameters)
           </code>
-          <div class="tip" id="1207">
+          <div class="tip" id="1209">
             <strong>Signature:</strong> parameters:NuGetParams -&gt; string<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L135-135" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L147-147" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1208', 1208)" onmouseover="showTip(event, '1208', 1208)">
-            propertiesParam(_arg1)
-          </code>
-          <div class="tip" id="1208">
-            <strong>Signature:</strong> _arg1:(string * string) list -&gt; string<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L269-269" class="github-link">
-              <i class="fab fa-github fa-fw"></i>
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1209', 1209)" onmouseover="showTip(event, '1209', 1209)">
-            publish(parameters)
-          </code>
-          <div class="tip" id="1209">
-            <strong>Signature:</strong> parameters:NuGetParams -&gt; unit<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L319-319" class="github-link">
-              <i class="fab fa-github fa-fw"></i>
-            </a>
-          <p>push package (and try again if something fails)</p>
-
-
         </td>
       </tr>
       <tr>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1210', 1210)" onmouseover="showTip(event, '1210', 1210)">
-            publishSymbols(parameters)
+            propertiesParam(_arg1)
           </code>
           <div class="tip" id="1210">
+            <strong>Signature:</strong> _arg1:(string * string) list -&gt; string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L281-281" class="github-link">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1211', 1211)" onmouseover="showTip(event, '1211', 1211)">
+            publish(parameters)
+          </code>
+          <div class="tip" id="1211">
             <strong>Signature:</strong> parameters:NuGetParams -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L354-354" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L428-428" class="github-link">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1212', 1212)" onmouseover="showTip(event, '1212', 1212)">
+            publishSymbols(parameters)
+          </code>
+          <div class="tip" id="1212">
+            <strong>Signature:</strong> parameters:NuGetParams -&gt; unit<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L432-432" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>push package to symbol server (and try again if something fails)</p>
@@ -780,15 +796,32 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1211', 1211)" onmouseover="showTip(event, '1211', 1211)">
+          <code onmouseout="hideTip(event, '1213', 1213)" onmouseover="showTip(event, '1213', 1213)">
+            push options parameters nupkg
+          </code>
+          <div class="tip" id="1213">
+            <strong>Signature:</strong> options:ToolOptions -&gt; parameters:NuGetPushParams -&gt; nupkg:string -&gt; unit<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L397-397" class="github-link">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1214', 1214)" onmouseover="showTip(event, '1214', 1214)">
             RequireExactly(version)
           </code>
-          <div class="tip" id="1211">
+          <div class="tip" id="1214">
             <strong>Signature:</strong> version:string -&gt; string<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L117-117" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L129-129" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           <p>Creates a string which tells NuGet that you require exactly this package version.</p>
@@ -799,15 +832,15 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1212', 1212)" onmouseover="showTip(event, '1212', 1212)">
+          <code onmouseout="hideTip(event, '1215', 1215)" onmouseover="showTip(event, '1215', 1215)">
             RequireRange breakingPoint version
           </code>
-          <div class="tip" id="1212">
+          <div class="tip" id="1215">
             <strong>Signature:</strong> breakingPoint:BreakingPoint -&gt; version:string -&gt; string<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L125-125" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L137-137" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -816,15 +849,32 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1213', 1213)" onmouseover="showTip(event, '1213', 1213)">
+          <code onmouseout="hideTip(event, '1216', 1216)" onmouseover="showTip(event, '1216', 1216)">
+            toPushCliArgs(param)
+          </code>
+          <div class="tip" id="1216">
+            <strong>Signature:</strong> param:NuGetPushParams -&gt; Arguments<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L379-379" class="github-link">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1217', 1217)" onmouseover="showTip(event, '1217', 1217)">
             webClient
           </code>
-          <div class="tip" id="1213">
+          <div class="tip" id="1217">
             <strong>Signature:</strong> WebClient<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L646-646" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L724-724" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -841,83 +891,15 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
       <tr>
         <td class="member-name">
 
-          <code onmouseout="hideTip(event, '1214', 1214)" onmouseover="showTip(event, '1214', 1214)">
+          <code onmouseout="hideTip(event, '1218', 1218)" onmouseover="showTip(event, '1218', 1218)">
             x.DownloadData(uri)
           </code>
-          <div class="tip" id="1214">
+          <div class="tip" id="1218">
             <strong>Signature:</strong> uri:string -&gt; byte []<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L580-580" class="github-link">
-              <i class="fab fa-github fa-fw"></i>
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1215', 1215)" onmouseover="showTip(event, '1215', 1215)">
-            x.DownloadData(uri)
-          </code>
-          <div class="tip" id="1215">
-            <strong>Signature:</strong> uri:Uri -&gt; byte []<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L582-582" class="github-link">
-              <i class="fab fa-github fa-fw"></i>
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1216', 1216)" onmouseover="showTip(event, '1216', 1216)">
-            x.DownloadDataTaskAsync(uri)
-          </code>
-          <div class="tip" id="1216">
-            <strong>Signature:</strong> uri:Uri -&gt; Task&lt;byte []&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L573-573" class="github-link">
-              <i class="fab fa-github fa-fw"></i>
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1217', 1217)" onmouseover="showTip(event, '1217', 1217)">
-            x.DownloadDataTaskAsync(uri)
-          </code>
-          <div class="tip" id="1217">
-            <strong>Signature:</strong> uri:string -&gt; Task&lt;byte []&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L579-579" class="github-link">
-              <i class="fab fa-github fa-fw"></i>
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-
-          <code onmouseout="hideTip(event, '1218', 1218)" onmouseover="showTip(event, '1218', 1218)">
-            x.DownloadFile(uri, filePath)
-          </code>
-          <div class="tip" id="1218">
-            <strong>Signature:</strong> (uri:string * filePath:string) -&gt; unit<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L557-557" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L658-658" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -927,14 +909,14 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1219', 1219)" onmouseover="showTip(event, '1219', 1219)">
-            x.DownloadFile(uri, filePath)
+            x.DownloadData(uri)
           </code>
           <div class="tip" id="1219">
-            <strong>Signature:</strong> (uri:Uri * filePath:string) -&gt; unit<br />
+            <strong>Signature:</strong> uri:Uri -&gt; byte []<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L559-559" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L660-660" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -944,14 +926,14 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1220', 1220)" onmouseover="showTip(event, '1220', 1220)">
-            x.DownloadFileTaskAsync(uri, filePath)
+            x.DownloadDataTaskAsync(uri)
           </code>
           <div class="tip" id="1220">
-            <strong>Signature:</strong> (uri:Uri * filePath:string) -&gt; Task&lt;unit&gt;<br />
+            <strong>Signature:</strong> uri:Uri -&gt; Task&lt;byte []&gt;<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L549-549" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L651-651" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -961,14 +943,14 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1221', 1221)" onmouseover="showTip(event, '1221', 1221)">
-            x.DownloadFileTaskAsync(uri, filePath)
+            x.DownloadDataTaskAsync(uri)
           </code>
           <div class="tip" id="1221">
-            <strong>Signature:</strong> (uri:string * filePath:string) -&gt; Task&lt;unit&gt;<br />
+            <strong>Signature:</strong> uri:string -&gt; Task&lt;byte []&gt;<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L556-556" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L657-657" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -978,14 +960,14 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1222', 1222)" onmouseover="showTip(event, '1222', 1222)">
-            x.DownloadString(uri)
+            x.DownloadFile(uri, filePath)
           </code>
           <div class="tip" id="1222">
-            <strong>Signature:</strong> uri:string -&gt; string<br />
+            <strong>Signature:</strong> (uri:string * filePath:string) -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L568-568" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L635-635" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -995,14 +977,14 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1223', 1223)" onmouseover="showTip(event, '1223', 1223)">
-            x.DownloadString(uri)
+            x.DownloadFile(uri, filePath)
           </code>
           <div class="tip" id="1223">
-            <strong>Signature:</strong> uri:Uri -&gt; string<br />
+            <strong>Signature:</strong> (uri:Uri * filePath:string) -&gt; unit<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L570-570" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L637-637" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -1012,14 +994,14 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1224', 1224)" onmouseover="showTip(event, '1224', 1224)">
-            x.DownloadStringTaskAsync(uri)
+            x.DownloadFileTaskAsync(uri, filePath)
           </code>
           <div class="tip" id="1224">
-            <strong>Signature:</strong> uri:Uri -&gt; Task&lt;string&gt;<br />
+            <strong>Signature:</strong> (uri:Uri * filePath:string) -&gt; Task&lt;unit&gt;<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L561-561" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L627-627" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -1029,14 +1011,14 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1225', 1225)" onmouseover="showTip(event, '1225', 1225)">
-            x.DownloadStringTaskAsync(uri)
+            x.DownloadFileTaskAsync(uri, filePath)
           </code>
           <div class="tip" id="1225">
-            <strong>Signature:</strong> uri:string -&gt; Task&lt;string&gt;<br />
+            <strong>Signature:</strong> (uri:string * filePath:string) -&gt; Task&lt;unit&gt;<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L567-567" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L634-634" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -1046,14 +1028,82 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
         <td class="member-name">
 
           <code onmouseout="hideTip(event, '1226', 1226)" onmouseover="showTip(event, '1226', 1226)">
-            x.UploadFileAsMultipart url filename
+            x.DownloadString(uri)
           </code>
           <div class="tip" id="1226">
+            <strong>Signature:</strong> uri:string -&gt; string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L646-646" class="github-link">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1227', 1227)" onmouseover="showTip(event, '1227', 1227)">
+            x.DownloadString(uri)
+          </code>
+          <div class="tip" id="1227">
+            <strong>Signature:</strong> uri:Uri -&gt; string<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L648-648" class="github-link">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1228', 1228)" onmouseover="showTip(event, '1228', 1228)">
+            x.DownloadStringTaskAsync(uri)
+          </code>
+          <div class="tip" id="1228">
+            <strong>Signature:</strong> uri:Uri -&gt; Task&lt;string&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L639-639" class="github-link">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1229', 1229)" onmouseover="showTip(event, '1229', 1229)">
+            x.DownloadStringTaskAsync(uri)
+          </code>
+          <div class="tip" id="1229">
+            <strong>Signature:</strong> uri:string -&gt; Task&lt;string&gt;<br />
+                                  </div>
+        </td>
+        <td class="xmldoc">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L645-645" class="github-link">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1230', 1230)" onmouseover="showTip(event, '1230', 1230)">
+            x.UploadFileAsMultipart url filename
+          </code>
+          <div class="tip" id="1230">
             <strong>Signature:</strong> url:Uri -&gt; filename:string -&gt; HttpResponseMessage<br />
                                   </div>
         </td>
         <td class="xmldoc">
-                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L585-585" class="github-link">
+                      <a href="https://github.com/fsharp/FAKE/blob/master/src/app/Fake.DotNet.NuGet/NuGet.fs#L663-663" class="github-link">
               <i class="fab fa-github fa-fw"></i>
             </a>
           
@@ -1099,7 +1149,7 @@ The .nuspec / projectfile is passed as-is (no templating is performed)</p>
 									</ul>
 								</div>
 							</div>
-							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.12.7-alpha.952</a></div>
+							<div class="p-t-lg has-text-grey-light">© FAKE. All rights reserved | Page generated with Version: <a href="https://github.com/fsharp/FAKE/releases">5.12.7-alpha.953</a></div>
 						</div>
 						<div class="column is-6">
 							<h4 class="title is-4">FAKE is a community effort</h4>
